@@ -143,38 +143,32 @@ const questions = [
         ],
         correctAnswer: "c",
         steps: `
+            <strong>Càlcul del volum total:</strong>
+            <br>
+            Diàmetre del cilindre: \\(D = 79,5 \\, \\text{mm} = 0,0795 \\, \\text{m}\\)  
+            <br>
+            Cursa del pistó: \\(C = 80,5 \\, \\text{mm} = 0,0805 \\, \\text{m}\\)
+            <br><br>
+            Volum d'un cilindre:  
             \\[
-            \\text{Quantitat inicial d’envasos} = 525 \\, \\text{kg}
+            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times D^2 \\times C
             \\]
             \\[
-            \\text{Percentatge de reducció} = 60\\%
+            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times (0,0795 \\, \\text{m})^2 \\times (0,0805 \\, \\text{m})
             \\]
             \\[
-            \\text{Quantitat reduïda} = 525 \\, \\text{kg} \\times 0{,}60 = 315 \\, \\text{kg}
+            V_{1 \\, cilindre} = 0,00040084 \\, \\text{m}^3
+            \\]
+            <br>
+            Volum total per 4 cilindres:  
+            \\[
+            V_{total} = 4 \\times 0,00040084 \\, \\text{m}^3 = 0,00160336 \\, \\text{m}^3
             \\]
             \\[
-            \\text{Quantitat de residu restant} = 525 \\, \\text{kg} - 315 \\, \\text{kg} = 210 \\, \\text{kg}
+            V_{total} \\times 10^6 = 1,603,36 \\, \\text{cm}^3
             \\]
             \\[
-            \\text{Emissions inicials} = 525 \, \\text{kg} \\times 120{,}09 \, \\text{g CO2eq/kg}
-            \\]
-            \\[
-            \\text{Emissions inicials} = 63047,25 \, \\text{g CO2eq}
-            \\]
-            \\[
-            \\text{Emissions inicials} = 63{,}05 \, \\text{kg CO2eq}
-            \\]
-            \\[
-            \\text{Emissions després de la reducció} = 210 \, \\text{kg} \\times 120{,}09 \, \\text{g CO2eq/kg}
-            \\]
-            \\[
-            \\text{Emissions després de la reducció} = 25218{,}9 \, \\text{g CO2eq}
-            \\]
-            \\[
-            \\text{Emissions després de la reducció} = 25{,}22 \, \\text{kg CO2eq}
-            \\]
-            \\[
-            \\text{Reducció en emissions} = 63{,}05 \, \\text{kg CO2eq} - 25{,}22 \, \\text{kg CO2eq} = 37{,}83 \, \\text{kg CO2eq}
+            V_{total} \\approx 1,598 \\, \\text{cm}^3
             \\]
             <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
