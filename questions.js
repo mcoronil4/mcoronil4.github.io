@@ -111,13 +111,21 @@ const questions = [
         ],
         correctAnswer: "b",
         steps: `
-            <strong>Càlcul del mòdul elàstic:</strong>
+            E = \\frac{\\sigma}{\\varepsilon}
+            <br><br>
+            \\sigma = 250 \\, \\text{MPa}
             <br>
-            250 MPa = 250 × 10^6 Pa
-            <br>
-            \\[
+            250 \\, \\text{MPa} = 250 \\times 10^6 \\, \\text{Pa}
+            <br><br>
             \\varepsilon = 0,00227
-            \\]
+            <br>
+            E = \\frac{250 \\times 10^6 \\, \\text{Pa}}{0,00227}
+            <br>
+            E = 110132158590,30838 \\, \\text{Pa}
+            <br>
+            E = 110,13215859030838 \\, \\text{GPa}
+            <br>
+            E \\approx 110 \\, \\text{GPa}
             \\[
             E = \\frac{250 \\times 10^6 \\, \\text{Pa}}{0,00227}
             \\]
