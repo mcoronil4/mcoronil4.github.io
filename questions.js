@@ -188,6 +188,49 @@ const questions = [
             <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+    },
+    {
+        type: "questions", // Tipus de pregunta
+        category: "pneumatics_hydraulics",
+        text: `Una porta corredissa automàtica és accionada mitjançant un motor que gira a \\(n_{\\text{mot}} = 1\,500\\,\\text{min}^{-1}\\) i un reductor. L’eix de sortida del reductor és un pinyó de radi primitiu \\(r = 30\\,\\text{mm}\\) que acciona una cremallera fixa a la porta. En règim nominal, la porta es trasllada a una velocitat constant \\(v_{\\text{nom}} = 0,12\\,\\text{m/s}\\). Determineu la relació de transmissió entre la velocitat angular de l’eix de sortida del reductor i la velocitat angular de l’eix del motor: \\(\\tau = \\frac{\\omega_{\\text{red}}}{\\omega_{\\text{mot}}}\\)`,
+        options: [
+            { text: "399,6 cm³", value: "a" },
+            { text: "3 196 cm³", value: "b" },
+            { text: "1 598 cm³", value: "c" },
+            { text: "8 042 cm³", value: "d" }
+        ],
+        correctAnswer: "c",
+        steps: `
+            <strong>Càlcul del volum total:</strong>
+            <br>
+            Diàmetre del cilindre: \\(D = 79,5 \\, \\text{mm} = 0,0795 \\, \\text{m}\\)  
+            <br>
+            Cursa del pistó: \\(C = 80,5 \\, \\text{mm} = 0,0805 \\, \\text{m}\\)
+            <br><br>
+            Volum d'un cilindre:  
+            \\[
+            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times D^2 \\times C
+            \\]
+            \\[
+            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times (0,0795 \\, \\text{m})^2 \\times (0,0805 \\, \\text{m})
+            \\]
+            \\[
+            V_{1 \\, cilindre} = 0,00040084 \\, \\text{m}^3
+            \\]
+            <br>
+            Volum total per 4 cilindres:  
+            \\[
+            V_{total} = 4 \\times 0,00040084 \\, \\text{m}^3 = 0,00160336 \\, \\text{m}^3
+            \\]
+            \\[
+            V_{total} \\times 10^6 = 1,603,36 \\, \\text{cm}^3
+            \\]
+            \\[
+            V_{total} \\approx 1,598 \\, \\text{cm}^3
+            \\]
+            <br><br>
+            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
 ];
 
