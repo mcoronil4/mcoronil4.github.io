@@ -111,29 +111,21 @@ const questions = [
         ],
         correctAnswer: "b",
         steps: `
+            <strong>Càlcul del mòdul elàstic:</strong>
+            <br>
+            250 MPa = 250 × 10^6 Pa
+            <br>
             \\[
-            m = 11 \\, \\text{L} \\times 1000 \\, \\text{g/L} = 11000 \\, \\text{g}
+            \\varepsilon = 0,00227
             \\]
             \\[
-            \\Delta T = 70 \\, ^\\circ \\text{C} - 10 \\, ^\\circ \\text{C} = 60 \\, ^\\circ \\text{C}
+            E = \\frac{250 \\times 10^6 \\, \\text{Pa}}{0,00227}
             \\]
             \\[
-            Q = m \\times c_e \\times \\Delta T
+            E \\approx 1,10132 \\times 10^{11} \\, \\text{Pa} = 110,132 \\, \\text{GPa}
             \\]
             \\[
-            Q = 11000 \\, \\text{g} \\times 4{,}18 \\, \\frac{\\text{J}}{\\text{g} \\cdot ^\\circ \\text{C}} \\times 60 \\, ^\\circ \\text{C}
-            \\]
-            \\[
-            Q = 11000 \\times 4{,}18 \\times 60 = 2{,}7588 \\times 10^6 \\, \\text{J}
-            \\]
-            \\[
-            W = 0{,}9 \\, \\text{kWh} \\times 3600000 \\, \\text{J/kWh} = 3240000 \\, \\text{J}
-            \\]
-            \\[
-            \\eta = \\frac{Q}{W} \\times 100
-            \\]
-            \\[
-            \\eta = \\frac{2{,}7588 \\times 10^6}{3{,}24 \\times 10^6} \\times 100 = 85{,}15 \\, \\%
+            E \\approx 110 \\, \\text{GPa}
             \\]
             <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
