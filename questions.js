@@ -201,34 +201,34 @@ const questions = [
         ],
         correctAnswer: "c",
         steps: `
-            <strong>Càlcul del volum total:</strong>
-            <br>
-            Diàmetre del cilindre: \\(D = 79,5 \\, \\text{mm} = 0,0795 \\, \\text{m}\\)  
-            <br>
-            Cursa del pistó: \\(C = 80,5 \\, \\text{mm} = 0,0805 \\, \\text{m}\\)
-            <br><br>
-            Volum d'un cilindre:  
-            \\[
-            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times D^2 \\times C
-            \\]
-            \\[
-            V_{1 \\, cilindre} = \\frac{\\pi}{4} \\times (0,0795 \\, \\text{m})^2 \\times (0,0805 \\, \\text{m})
-            \\]
-            \\[
-            V_{1 \\, cilindre} = 0,00040084 \\, \\text{m}^3
-            \\]
-            <br>
-            Volum total per 4 cilindres:  
-            \\[
-            V_{total} = 4 \\times 0,00040084 \\, \\text{m}^3 = 0,00160336 \\, \\text{m}^3
-            \\]
-            \\[
-            V_{total} \\times 10^6 = 1,603,36 \\, \\text{cm}^3
-            \\]
-            \\[
-            V_{total} \\approx 1,598 \\, \\text{cm}^3
-            \\]
-            <br><br>
+            <strong>Càlcul de la relació de transmissió:</strong><br>
+\\[
+\\tau = \\frac{\\omega_{red}}{\\omega_{mot}}
+\\]<br>
+Motor nominal:<br>
+\\[
+n_{mot} = 1500\\,\\text{min}^{-1}
+\\]<br>
+Velocitat angular motor:<br>
+\\[
+\\omega_{mot} = \\frac{2\\pi \\times n_{mot}}{60\\,\\text{s/min}} = \\frac{2\\pi \\times 1500}{60} = 157,08\\,\\text{rad/s}
+\\]<br>
+Velocitat de la porta:<br>
+\\[
+v_{nom} = 0,12\\,\\text{m/s}
+\\]<br>
+Radi del pinyó:<br>
+\\[
+r = 30\\,\\text{mm} = 0,03\\,\\text{m}
+\\]<br>
+Velocitat angular reductor:<br>
+\\[
+\\omega_{red} = \\frac{v_{nom}}{r} = \\frac{0,12}{0,03} = 4\\,\\text{rad/s}
+\\]<br>
+Relació de transmissió:<br>
+\\[
+\\tau = \\frac{\\omega_{red}}{\\omega_{mot}} = \\frac{4}{157,08} = 0,02546 = 25,46 \\times 10^{-3}
+\\]<br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
