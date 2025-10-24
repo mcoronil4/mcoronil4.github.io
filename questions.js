@@ -111,29 +111,36 @@ const questions = [
         ],
         correctAnswer: "b",
         steps: `
-            E = \\frac{\\sigma}{\\varepsilon}
+            <strong>Càlcul del mòdul elàstic:</strong>
             <br><br>
-            \\sigma = 250 \\, \\text{MPa}
+            Tensió aplicada:
+            \\[
+            \\sigma = 250\\ \\text{MPa}
+            \\]
+            \\[
+            250\\ \\text{MPa} = 250 \\times 10^6\\ \\text{Pa}
+            \\]
             <br>
-            250 \\, \\text{MPa} = 250 \\times 10^6 \\, \\text{Pa}
-            <br><br>
+            Deformació:
+            \\[
             \\varepsilon = 0,00227
+            \\]
             <br>
-            E = \\frac{250 \\times 10^6 \\, \\text{Pa}}{0,00227}
-            <br>
-            E = 110132158590,30838 \\, \\text{Pa}
-            <br>
-            E = 110,13215859030838 \\, \\text{GPa}
-            <br>
-            E \\approx 110 \\, \\text{GPa}
+            Mòdul elàstic:
             \\[
-            E = \\frac{250 \\times 10^6 \\, \\text{Pa}}{0,00227}
+            E = \\frac{\\sigma}{\\varepsilon}
             \\]
             \\[
-            E \\approx 1,10132 \\times 10^{11} \\, \\text{Pa} = 110,132 \\, \\text{GPa}
+            E = \\frac{250 \\times 10^6\\ \\text{Pa}}{0,00227}
             \\]
             \\[
-            E \\approx 110 \\, \\text{GPa}
+            E = 110132158590,30838\\ \\text{Pa}
+            \\]
+            \\[
+            E = 110,13215859030838\\ \\text{GPa}
+            \\]
+            \\[
+            E \\approx 110\\ \\text{GPa}
             \\]
             <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
