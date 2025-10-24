@@ -104,10 +104,10 @@ const questions = [
         category: "materials_i_assaigs",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
         options: [
-            { text: "11,74 %", value: "a" },
-            { text: "27,59 %", value: "b" },
-            { text: "76,63 %", value: "c" },
-            { text: "85,15 %", value: "d" }
+            { text: "250 GPa", value: "a" },
+            { text: "110 GPa", value: "b" },
+            { text: "265 GPa", value: "c" },
+            { text: "62,5 GPa", value: "d" }
         ],
         correctAnswer: "d",
         steps: `
