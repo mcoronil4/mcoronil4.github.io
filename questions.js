@@ -194,10 +194,10 @@ const questions = [
         category: "pneumatics_hydraulics",
         text: `Una porta corredissa automàtica és accionada mitjançant un motor que gira a \\(n_{\\text{mot}} = 1\,500\\,\\text{min}^{-1}\\) i un reductor. L’eix de sortida del reductor és un pinyó de radi primitiu \\(r = 30\\,\\text{mm}\\) que acciona una cremallera fixa a la porta. En règim nominal, la porta es trasllada a una velocitat constant \\(v_{\\text{nom}} = 0,12\\,\\text{m/s}\\). Determineu la relació de transmissió entre la velocitat angular de l’eix de sortida del reductor i la velocitat angular de l’eix del motor: \\(\\tau = \\frac{\\omega_{\\text{red}}}{\\omega_{\\text{mot}}}\\).`,
         options: [
-            { text: "399,6 cm³", value: "a" },
-            { text: "3 196 cm³", value: "b" },
-            { text: "1 598 cm³", value: "c" },
-            { text: "8 042 cm³", value: "d" }
+            { text: "39,27", value: "a" },
+            { text: "0,7639 × 10^{-3}", value: "b" },
+            { text: "25,46 × 10^{-3}", value: "c" },
+            { text: "infinit", value: "d" }
         ],
         correctAnswer: "c",
         steps: `
