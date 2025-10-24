@@ -109,7 +109,7 @@ const questions = [
             { text: "265 GPa", value: "c" },
             { text: "62,5 GPa", value: "d" }
         ],
-        correctAnswer: "d",
+        correctAnswer: "b",
         steps: `
             \\[
             m = 11 \\, \\text{L} \\times 1000 \\, \\text{g/L} = 11000 \\, \\text{g}
