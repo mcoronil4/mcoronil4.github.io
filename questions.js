@@ -134,14 +134,14 @@ const questions = [
     {
         type: "questions", // Tipus de pregunta
         category: "materials",
-        text: `Una família que anualment generava 525 kg d’envasos, en un any ha aconseguit reduir aquesta quantitat un 60 %. Quina reducció en emissions de GEH ha obtingut respecte a l’any anterior, tenint en compte que el factor d’emissió dels envasos és de 120,09 g CO2eq/kg residu?`,
+        text: `Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de 79,5 mm de diàmetre i 80,5 mm de cursa. Quina és la cilindrada del motor?`,
         options: [
-            { text: "25,22 kg CO2eq", value: "a" },
-            { text: "37,83 kg CO2eq", value: "b" },
-            { text: "63,05 kg CO2eq", value: "c" },
-            { text: "88,27 kg CO2eq", value: "d" }
+            { text: "399,6 cm³", value: "a" },
+            { text: "3 196 cm³", value: "b" },
+            { text: "1 598 cm³", value: "c" },
+            { text: "8 042 cm³", value: "d" }
         ],
-        correctAnswer: "b",
+        correctAnswer: "c",
         steps: `
             \\[
             \\text{Quantitat inicial d’envasos} = 525 \\, \\text{kg}
