@@ -244,34 +244,39 @@ const questions = [
         ],
         correctAnswer: "b",
         steps: `
-            <strong>Càlcul de la relació de transmissió:</strong><br>
-            \\[
-            \\tau = \\frac{\\omega_{red}}{\\omega_{mot}}
-            \\]<br>
-            Motor nominal:<br>
-            \\[
-            n_{mot} = 1500\\,\\text{min}^{-1}
-            \\]<br>
-            Velocitat angular motor:<br>
-            \\[
-            \\omega_{mot} = \\frac{2\\pi \\times n_{mot}}{60\\,\\text{s/min}} = \\frac{2\\pi \\times 1500\\,\\text{min}^{-1}}{60\\,\\text{s/min}} = 157,08\\,\\text{rad/s}
-            \\]<br>
-            Velocitat de la porta:<br>
-            \\[
-            v_{nom} = 0,12\\,\\text{m/s}
-            \\]<br>
-            Radi del pinyó:<br>
-            \\[
-            r = 30\\,\\text{mm} = 0,03\\,\\text{m}
-            \\]<br>
-            Velocitat angular reductor:<br>
-            \\[
-            \\omega_{red} = \\frac{v_{nom}}{r} = \\frac{0,12\\,\\text{m/s}}{0,03\\,\\text{m}} = 4\\,\\text{rad/s}
-            \\]<br>
-            Relació de transmissió:<br>
-            \\[
-            \\tau = \\frac{\\omega_{red}}{\\omega_{mot}} = \\frac{4\\,\\text{rad/s}}{157,08\\,\\text{rad/s}} = 0,02546 = 25,46 \\times 10^{-3}
-            \\]<br><br>
+            <strong>Càlcul de la força sobre l'èmbol petit:</strong><br>
+Pressió hidràulica:<br>
+\\[
+F_1 = F_2 \\cdot \\frac{A_1}{A_2}
+\\]<br>
+Massa a aixecar:<br>
+\\[
+m = 1200\\,\\text{kg}
+\\]<br>
+Gravetat:<br>
+\\[
+g = 9,807\\,\\text{m/s^2}
+\\]<br>
+Força sobre l'èmbol gran:<br>
+\\[
+F_2 = m \\cdot g = 1200\\,\\text{kg} \\times 9,807\\,\\text{m/s^2} = 11768,4\\,\\text{N}
+\\]<br>
+Àrea de l'èmbol petit:<br>
+\\[
+A_1 = 1000\\,\\text{mm^2} = 1000 \\times 10^{-6}\\,\\text{m^2} = 0,001\\,\\text{m^2}
+\\]<br>
+Àrea de l'èmbol gran:<br>
+\\[
+A_2 = 30000\\,\\text{mm^2} = 30000 \\times 10^{-6}\\,\\text{m^2} = 0,03\\,\\text{m^2}
+\\]<br>
+Força sobre l'èmbol petit:<br>
+\\[
+F_1 = F_2 \\cdot \\frac{A_1}{A_2} = 11768,4\\,\\text{N} \\cdot \\frac{0,001\\,\\text{m^2}}{0,03\\,\\text{m^2}} 
+\\]\\
+\\[
+F_1 = 392,28\\,\\text{N}
+\\]
+<br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
