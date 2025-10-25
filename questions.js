@@ -231,6 +231,49 @@ const questions = [
             \\]<br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+    },
+    {
+        type: "questions", // Tipus de pregunta
+        category: "motors_reductors",
+        text: `Una porta corredissa automàtica és accionada mitjançant un motor que gira a \\(n_{\\text{mot}} = 1\,500\\,\\text{min}^{-1}\\) i un reductor. L’eix de sortida del reductor és un pinyó de radi primitiu \\(r = 30\\,\\text{mm}\\) que acciona una cremallera fixa a la porta. En règim nominal, la porta es trasllada a una velocitat constant \\(v_{\\text{nom}} = 0,12\\,\\text{m/s}\\). Determineu la relació de transmissió entre la velocitat angular de l’eix de sortida del reductor i la velocitat angular de l’eix del motor: \\(\\tau = \\frac{\\omega_{\\text{red}}}{\\omega_{\\text{mot}}}\\).`,
+        options: [
+            { text: "39,27", value: "a" },
+            { text: "0,7639 × 10^{-3}", value: "b" },
+            { text: "25,46 × 10^{-3}", value: "c" },
+            { text: "infinit", value: "d" }
+        ],
+        correctAnswer: "c",
+        steps: `
+            <strong>Càlcul de la relació de transmissió:</strong><br>
+            \\[
+            \\tau = \\frac{\\omega_{red}}{\\omega_{mot}}
+            \\]<br>
+            Motor nominal:<br>
+            \\[
+            n_{mot} = 1500\\,\\text{min}^{-1}
+            \\]<br>
+            Velocitat angular motor:<br>
+            \\[
+            \\omega_{mot} = \\frac{2\\pi \\times n_{mot}}{60\\,\\text{s/min}} = \\frac{2\\pi \\times 1500\\,\\text{min}^{-1}}{60\\,\\text{s/min}} = 157,08\\,\\text{rad/s}
+            \\]<br>
+            Velocitat de la porta:<br>
+            \\[
+            v_{nom} = 0,12\\,\\text{m/s}
+            \\]<br>
+            Radi del pinyó:<br>
+            \\[
+            r = 30\\,\\text{mm} = 0,03\\,\\text{m}
+            \\]<br>
+            Velocitat angular reductor:<br>
+            \\[
+            \\omega_{red} = \\frac{v_{nom}}{r} = \\frac{0,12\\,\\text{m/s}}{0,03\\,\\text{m}} = 4\\,\\text{rad/s}
+            \\]<br>
+            Relació de transmissió:<br>
+            \\[
+            \\tau = \\frac{\\omega_{red}}{\\omega_{mot}} = \\frac{4\\,\\text{rad/s}}{157,08\\,\\text{rad/s}} = 0,02546 = 25,46 \\times 10^{-3}
+            \\]<br><br>
+            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
 ];
 
