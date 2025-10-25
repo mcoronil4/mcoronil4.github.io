@@ -293,26 +293,27 @@ const questions = [
         correctAnswer: "a",
         steps: `
             <strong>Càlcul de la quantitat de niobi:</strong><br>
-Aliatge Ti-6Al-7Nb:<br>
-\[
+Percentatge de titani:<br>
+\\[
 \%Ti = 100\% - (5,5\% + 6,5\% + 0,25\% + 0,08\%) = 87,67\%
-\]<br>
+\\]<br>
 Massa de titani disponible:<br>
-\[
+\\[
 m_{Ti} = 250\,\text{kg}
-\]<br>
-Massa total d'aliatge:<br>
-\[
+\\]<br>
+Massa total de l'aliatge:<br>
+\\[
 m_{total} = \frac{m_{Ti}}{0,8767} \approx 285,16\,\text{kg}
-\]<br>
+\\]<br>
 Percentatge de niobi:<br>
-\[
+\\[
 \%Nb = 6,5\% = 0,065
-\]<br>
+\\]<br>
 Massa de niobi necessària:<br>
-\[
+\\[
 m_{Nb} = 0,065 \times 285,16\,\text{kg} \approx 18,54\,\text{kg}
-\]<br><br>
+\\]
+<br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
