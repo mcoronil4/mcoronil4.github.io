@@ -154,18 +154,18 @@ const questions = [
         type: "exercicis",
         category: "energia",
         text: `Una estufa d’exterior alimentada amb gas butà té un consum regulable d’entre 
-\\(c_{m\\text{ín}} = 450\\,\\text{g/h}\\) i \\(c_{m\\text{àx}} = 800\\,\\text{g/h}\\) de butà. El poder calorífic del butà és \\(p_b = 49,61\\,\\text{MJ/kg}\\) i es distribueix en bombones que contenen una massa de butà de \\(m_b = 12,5\\,\\text{kg}\\). Determineu:
-<br><br>
-<strong>a)</strong> La potència mínima \\(P_{\\text{mín}}\\) i màxima \\(P_{\\text{màx}}\\) de l’estufa. [0,5 punts]
-<br>
-<strong>b)</strong> La durada de funcionament màxima d’una bombona \\(t_{\\text{màx}}\\). [0,5 punts]
-<br>
-<strong>c)</strong> El gràfic de la durada \\(t\\) d’una bombona en hores, en funció del consum \\(c\\) de butà, i indiqueu-ne les escales. [1 punt]
-<br><br>
-Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
-<br>
-<br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
-<br><br>
+            \\(c_{m\\text{ín}} = 450\\,\\text{g/h}\\) i \\(c_{m\\text{àx}} = 800\\,\\text{g/h}\\) de butà. El poder calorífic del butà és \\(p_b = 49,61\\,\\text{MJ/kg}\\) i es distribueix en bombones que contenen una massa de butà de \\(m_b = 12,5\\,\\text{kg}\\). Determineu:
+            <br><br>
+            <strong>a)</strong> La potència mínima \\(P_{\\text{mín}}\\) i màxima \\(P_{\\text{màx}}\\) de l’estufa. [0,5 punts]
+            <br>
+            <strong>b)</strong> La durada de funcionament màxima d’una bombona \\(t_{\\text{màx}}\\). [0,5 punts]
+            <br>
+            <strong>c)</strong> El gràfic de la durada \\(t\\) d’una bombona en hores, en funció del consum \\(c\\) de butà, i indiqueu-ne les escales. [1 punt]
+            <br><br>
+            Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
+            <br>
+            <br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
+            <br><br>
                <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
