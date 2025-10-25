@@ -255,24 +255,24 @@ m = 1200\\,\\text{kg}
 \\]<br>
 Gravetat:<br>
 \\[
-g = 9,807\\,\\text{m/s^2}
+g = 9,807\\,\\text{m·s²}
 \\]<br>
 Força sobre l'èmbol gran:<br>
 \\[
-F_2 = m \\cdot g = 1200\\,\\text{kg} \\times 9,807\\,\\text{m/s^2} = 11768,4\\,\\text{N}
+F_2 = m \\cdot g = 1200\\,\\text{kg} \\times 9,807\\,\\text{m·s²} = 11768,4\\,\\text{N}
 \\]<br>
 Àrea de l'èmbol petit:<br>
 \\[
-A_1 = 1000\\,\\text{mm^2} = 1000 \\times 10^{-6}\\,\\text{m^2} = 0,001\\,\\text{m^2}
+A_1 = 1000\\,\\text{mm²} = 1000 \\times 10⁻⁶\\,\\text{m²} = 0,001\\,\\text{m²}
 \\]<br>
 Àrea de l'èmbol gran:<br>
 \\[
-A_2 = 30000\\,\\text{mm^2} = 30000 \\times 10^{-6}\\,\\text{m^2} = 0,03\\,\\text{m^2}
+A_2 = 30000\\,\\text{mm²} = 30000 \\times 10⁻⁶\\,\\text{m²} = 0,03\\,\\text{m²}
 \\]<br>
 Força sobre l'èmbol petit:<br>
 \\[
-F_1 = F_2 \\cdot \\frac{A_1}{A_2} = 11768,4\\,\\text{N} \\cdot \\frac{0,001\\,\\text{m^2}}{0,03\\,\\text{m^2}} 
-\\]\\
+F_1 = F_2 \\cdot \\frac{A_1}{A_2} = 11768,4\\,\\text{N} \\cdot \\frac{0,001\\,\\text{m²}}{0,03\\,\\text{m²}}
+\\]<br>
 \\[
 F_1 = 392,28\\,\\text{N}
 \\]
