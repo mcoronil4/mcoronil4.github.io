@@ -234,7 +234,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "motors_reductors",
+        category: "pneumatics_hydraulics",
         text: `Es vol aixecar una massa \\(m = 1\,200\\,\\text{kg}\\) utilitzant una premsa hidràulica. La secció transversal de l’èmbol gran és \\(A_{gran} = 30\,000\\,\\text{mm}^2\\) i la del petit és \\(A_{petit} = 1\,000\\,\\text{mm}^2\\). Preneu \\(g = 9,807\\,\\text{m/s}^2\\). Determineu la força \\(F\\) que cal exercir sobre l’èmbol petit: \\(F = ?\\).`,
         options: [
             { text: "353,1 kN", value: "a" },
