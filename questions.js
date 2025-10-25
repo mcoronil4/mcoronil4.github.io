@@ -149,7 +149,7 @@ const questions = [
     {
         type: "questions", // Tipus de pregunta
         category: "pneumatics_hydraulics",
-        text: `Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de \\(\\textbf{79,5\\,mm}\\) de diàmetre i \\(\\textbf{80,5\\,mm}\\) de cursa. Quina és la cilindrada del motor?`,
+        text: `Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de diàmetre **79,5 mm** i cursa **80,5 mm**. Quina és la cilindrada del motor?`,
         options: [
             { text: "399,6 cm³", value: "a" },
             { text: "3 196 cm³", value: "b" },
