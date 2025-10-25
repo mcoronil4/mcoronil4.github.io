@@ -245,38 +245,38 @@ const questions = [
         correctAnswer: "b",
         steps: `
             <strong>Càlcul de la força sobre l'èmbol petit:</strong><br>
-Pressió hidràulica:<br>
-\\[
-F_1 = F_2 \\cdot \\frac{A_1}{A_2}
-\\]<br>
-Massa a aixecar:<br>
-\\[
-m = 1200\\,\\text{kg}
-\\]<br>
-Gravetat:<br>
-\\[
-g = 9,807\\,\\text{m·s²}
-\\]<br>
-Força sobre l'èmbol gran:<br>
-\\[
-F_2 = m \\cdot g = 1200\\,\\text{kg} \\times 9,807\\,\\text{m·s²} = 11768,4\\,\\text{N}
-\\]<br>
-Àrea de l'èmbol petit:<br>
-\\[
-A_1 = 1000\\,\\text{mm²} = 1000 \\times 10⁻⁶\\,\\text{m²} = 0,001\\,\\text{m²}
-\\]<br>
-Àrea de l'èmbol gran:<br>
-\\[
-A_2 = 30000\\,\\text{mm²} = 30000 \\times 10⁻⁶\\,\\text{m²} = 0,03\\,\\text{m²}
-\\]<br>
-Força sobre l'èmbol petit:<br>
-\\[
-F_1 = F_2 \\cdot \\frac{A_1}{A_2} = 11768,4\\,\\text{N} \\cdot \\frac{0,001\\,\\text{m²}}{0,03\\,\\text{m²}}
-\\]<br>
-\\[
-F_1 = 392,28\\,\\text{N}
-\\]
-<br><br>
+            Pressió hidràulica:<br>
+            \\[
+            F_1 = F_2 \\cdot \\frac{A_1}{A_2}
+            \\]<br>
+            Massa a aixecar:<br>
+            \\[
+            m = 1200\\,\\text{kg}
+            \\]<br>
+            Gravetat:<br>
+            \\[
+            g = 9,807\\,\\text{m·s²}
+            \\]<br>
+            Força sobre l'èmbol gran:<br>
+            \\[
+            F_2 = m \\cdot g = 1200\\,\\text{kg} \\times 9,807\\,\\text{m·s²} = 11768,4\\,\\text{N}
+            \\]<br>
+            Àrea de l'èmbol petit:<br>
+            \\[
+            A_1 = 1000\\,\\text{mm²} = 1000 \\times 10⁻⁶\\,\\text{m²} = 0,001\\,\\text{m²}
+            \\]<br>
+            Àrea de l'èmbol gran:<br>
+            \\[
+            A_2 = 30000\\,\\text{mm²} = 30000 \\times 10⁻⁶\\,\\text{m²} = 0,03\\,\\text{m²}
+            \\]<br>
+            Força sobre l'èmbol petit:<br>
+            \\[
+            F_1 = F_2 \\cdot \\frac{A_1}{A_2} = 11768,4\\,\\text{N} \\cdot \\frac{0,001\\,\\text{m²}}{0,03\\,\\text{m²}}
+            \\]<br>
+            \\[
+            F_1 = 392,28\\,\\text{N}
+            \\]
+            <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
