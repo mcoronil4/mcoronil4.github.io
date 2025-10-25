@@ -1,7 +1,7 @@
 const questions = [
     {
         type: "exercicis",
-        category: "energia",
+        category: "control_logic",
         text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
 
 Utilitzant les variables d’estat següents:
