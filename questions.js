@@ -96,18 +96,12 @@ const questions = [
         type: "exercicis",
         category: "energia",
         text: `S’instaŀla en una cadira de rodes manual un sistema electromecànic dissenyat per a ajudar l’assistent que empeny la cadira. El sistema d’accionament està format per una bateria ideal d’ió liti de tensió \\(U_{bat} = 12\\,\\text{V}\\) i energia \\(E_{bat} = 240\\,\\text{Wh}\\), un motor de rendiment \\(\\eta_{mot} = 0{,}87\\), un reductor de rendiment \\(\\eta_{red} = 0{,}95\\) i dues rodes auxiliars de diàmetre \\(d = 200\\,\\text{mm}\\) que toquen a terra. La relació de transmissió entre la velocitat de rotació de les rodes \\(n_r\\) i la velocitat de rotació del motor \\(n_{mot}\\) és \\(\\tau = \\dfrac{n_r}{n_{mot}} = 0{,}08\\).
-
-En les condicions d’estudi, es fa avançar la cadira en línia recta a una velocitat constant \\(v = 3{,}7\\,\\text{km/h}\\) per un terreny horitzontal i sense que les rodes llisquin. El motor consumeix una potència \\(P_{cons} = 75\\,\\text{W}\\). Determineu, per a aquestes condicions:
-
-<br><strong>a)</strong> La velocitat angular de les rodes auxiliars \\(\\omega_r\\) i la velocitat angular a l’eix del motor \\(\\omega_{mot}\\). [0,5 punts]
-
-<br><strong>b)</strong> La potència a l’eix de les rodes \\(P_{subm}\\). [0,5 punts]
-
-<br><strong>c)</strong> El parell \\(\\Gamma\\) a l’eix del motor. [0,5 punts]
-
-<br><strong>d)</strong> El temps màxim de funcionament \\(t\\) del conjunt i la distància màxima recorreguda \\(s_{rec}\\). [1 punt]
-
-<br><br>
+            En les condicions d’estudi, es fa avançar la cadira en línia recta a una velocitat constant \\(v = 3{,}7\\,\\text{km/h}\\) per un terreny horitzontal i sense que les rodes llisquin. El motor consumeix una potència \\(P_{cons} = 75\\,\\text{W}\\). Determineu, per a aquestes condicions:
+            <br><strong>a)</strong> La velocitat angular de les rodes auxiliars \\(\\omega_r\\) i la velocitat angular a l’eix del motor \\(\\omega_{mot}\\). [0,5 punts]
+            <br><strong>b)</strong> La potència a l’eix de les rodes \\(P_{subm}\\). [0,5 punts]
+            <br><strong>c)</strong> El parell \\(\\Gamma\\) a l’eix del motor. [0,5 punts]
+            <br><strong>d)</strong> El temps màxim de funcionament \\(t\\) del conjunt i la distància màxima recorreguda \\(s_{rec}\\). [1 punt]
+            <br><br>
                <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
