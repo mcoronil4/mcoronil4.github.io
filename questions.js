@@ -94,7 +94,7 @@ const questions = [
     },
     {
         type: "exercicis",
-        category: "control_logic",
+        category: "energia",
         text: `S’instaŀla en una cadira de rodes manual un sistema electromecànic dissenyat per a ajudar l’assistent que empeny la cadira. El sistema d’accionament està format per una bateria ideal d’ió liti de tensió \\(U_{bat} = 12\\,\\text{V}\\) i energia \\(E_{bat} = 240\\,\\text{Wh}\\), un motor de rendiment \\(\\eta_{mot} = 0{,}87\\), un reductor de rendiment \\(\\eta_{red} = 0{,}95\\) i dues rodes auxiliars de diàmetre \\(d = 200\\,\\text{mm}\\) que toquen a terra. La relació de transmissió entre la velocitat de rotació de les rodes \\(n_r\\) i la velocitat de rotació del motor \\(n_{mot}\\) és \\(\\tau = \\dfrac{n_r}{n_{mot}} = 0{,}08\\).
 
 En les condicions d’estudi, es fa avançar la cadira en línia recta a una velocitat constant \\(v = 3{,}7\\,\\text{km/h}\\) per un terreny horitzontal i sense que les rodes llisquin. El motor consumeix una potència \\(P_{cons} = 75\\,\\text{W}\\). Determineu, per a aquestes condicions:
