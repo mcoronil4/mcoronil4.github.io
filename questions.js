@@ -282,7 +282,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "pneumatics_hydraulics",
+        category: "materials_i_assaigs",
         text: `El Ti-6Al-7Nb és un aliatge biocompatible de titani àmpliament utilitzat en aplicacions quirúrgiques. Conté un 5,5 % d’alumini (Al), un 6,5 % de niobi (Nb), 0,25 % de ferro (Fe), un 0,08 % de carboni (C) i la resta és titani (Ti). En l’obtenció d’aquest aliatge, quina quantitat de niobi cal per a aliar-lo amb 250 kg de titani?`,
         options: [
             { text: "353,1 kN", value: "a" },
