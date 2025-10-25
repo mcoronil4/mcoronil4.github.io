@@ -237,12 +237,12 @@ const questions = [
         category: "motors_reductors",
         text: `Es vol aixecar una massa \\(m = 1\,200\\,\\text{kg}\\) utilitzant una premsa hidràulica. La secció transversal de l’èmbol gran és \\(A_{gran} = 30\,000\\,\\text{mm}^2\\) i la del petit és \\(A_{petit} = 1\,000\\,\\text{mm}^2\\). Preneu \\(g = 9,807\\,\\text{m/s}^2\\). Determineu la força \\(F\\) que cal exercir sobre l’èmbol petit: \\(F = ?\\).`,
         options: [
-            { text: "39,27", value: "a" },
-            { text: "0,7639 × 10^{-3}", value: "b" },
-            { text: "25,46 × 10^{-3}", value: "c" },
-            { text: "infinit", value: "d" }
+            { text: "353,1 kN", value: "a" },
+            { text: "392,3 N", value: "b" },
+            { text: "40 N", value: "c" },
+            { text: "36 kN", value: "d" }
         ],
-        correctAnswer: "c",
+        correctAnswer: "b",
         steps: `
             <strong>Càlcul de la relació de transmissió:</strong><br>
             \\[
