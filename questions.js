@@ -5,10 +5,10 @@ const questions = [
         text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
 
 Utilitzant les variables d’estat següents:
-<br>Velocitat del cotxe: \\(v = \\{ 1 : \\text{superior a } 20\\,\\text{km/h} ;\\; 0 : \\text{igual o inferior a } 20\\,\\text{km/h} \\}\\)
-<br>Cinturó de seguretat: \\(c = \\{ 1 : \\text{cordat} ;\\; 0 : \\text{descordat} \\}\\)
-<br>Llums quan és fosc: \\(l = \\{ 1 : \\text{encesos} ;\\; 0 : \\text{apagats} \\}\\)
-<br>Alarma: \\(a = \\{ 1 : \\text{sona} ;\\; 0 : \\text{no sona} \\}\\)
+<br>Velocitat del cotxe: \\(v = \\{ 1 : \\text{superior a } 20\\,\\text{km/h} ;\\; 0 : \\text{igual o inferior a } 20\\,\\text{km/h} \\)
+<br>Cinturó de seguretat: \\(c = \\{ 1 : \\text{cordat} ;\\; 0 : \\text{descordat} \\)
+<br>Llums quan és fosc: \\(l = \\{ 1 : \\text{encesos} ;\\; 0 : \\text{apagats} \\)
+<br>Alarma: \\(a = \\{ 1 : \\text{sona} ;\\; 0 : \\text{no sona} \\)
 
 <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
 <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
