@@ -106,49 +106,46 @@ const questions = [
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
             <strong>a) Velocitat angular de les rodes i del motor:</strong>
-<br>
-- Velocitat angular de les rodes auxiliars:
-\\[
-\\omega_r = \\frac{v}{r} = \\frac{1,028\\,\\text{m/s}}{0,1\\,\\text{m}} = 10,28\\,\\text{rad/s}
-\\]
-- Velocitat angular del motor:
-\\[
-\\omega_{mot} = \\frac{\\omega_r}{\\tau} = \\frac{10,28\\,\\text{rad/s}}{0,08} = 128,5\\,\\text{rad/s}
-\\]
-
-<br><strong>b) Potència a l’eix de les rodes:</strong>
-<br>
-- Aplicant rendiment del motor i del reductor:
-\\[
-P_{subm} = P_{cons} \\times \\eta_{mot} \\times \\eta_{red} = 75\\,\\text{W} \\times 0,87 \\times 0,95 = 62,06\\,\\text{W}
-\\]
-
-<br><strong>c) Parell a l’eix del motor:</strong>
-<br>
-- Potència útil a l’eix del motor:
-\\[
-P_{mot} = P_{cons} \\times \\eta_{mot} = 75\\,\\text{W} \\times 0,87 = 65,25\\,\\text{W}
-\\]
-- Parell:
-\\[
-\\Gamma_{mot} = \\frac{P_{mot}}{\\omega_{mot}} = \\frac{65,25\\,\\text{W}}{128,5\\,\\text{rad/s}} = 0,5077\\,\\text{N·m}
-\\]
-
-<br><strong>d) Temps màxim de funcionament i distància recorreguda:</strong>
-<br>
-- Energia de la bateria:
-\\[
-E_{bat} = 240\\,\\text{Wh} = 240 \\times 3600\\,\\text{W·s} = 864000\\,\\text{J}
-\\]
-- Temps de funcionament:
-\\[
-t = \\frac{E_{bat}}{P_{cons}} = \\frac{864000\\,\\text{J}}{75\\,\\text{W}} = 11520\\,\\text{s} = 3,2\\,\\text{h}
-\\]
-- Distància màxima recorreguda:
-\\[
-s_{rec} = v \\times t = 1,028\\,\\text{m/s} \\times 11520\\,\\text{s} = 11830\\,\\text{m} = 11,83\\,\\text{km}
-\\]
-<br><br>
+            <br>
+            - Velocitat angular de les rodes auxiliars:
+            \\[
+            \\omega_r = \\frac{v}{r} = \\frac{1,028\\,\\text{m/s}}{0,1\\,\\text{m}} = 10,28\\,\\text{rad/s}
+            \\]
+            - Velocitat angular del motor:
+            \\[
+            \\omega_{mot} = \\frac{\\omega_r}{\\tau} = \\frac{10,28\\,\\text{rad/s}}{0,08} = 128,5\\,\\text{rad/s}
+            \\]
+            <br><strong>b) Potència a l’eix de les rodes:</strong>
+            <br>
+            - Aplicant rendiment del motor i del reductor:
+            \\[
+            P_{subm} = P_{cons} \\times \\eta_{mot} \\times \\eta_{red} = 75\\,\\text{W} \\times 0,87 \\times 0,95 = 62,06\\,\\text{W}
+            \\]
+            <br><strong>c) Parell a l’eix del motor:</strong>
+            <br>
+            - Potència útil a l’eix del motor:
+            \\[
+            P_{mot} = P_{cons} \\times \\eta_{mot} = 75\\,\\text{W} \\times 0,87 = 65,25\\,\\text{W}
+            \\]
+            - Parell:
+            \\[
+            \\Gamma_{mot} = \\frac{P_{mot}}{\\omega_{mot}} = \\frac{65,25\\,\\text{W}}{128,5\\,\\text{rad/s}} = 0,5077\\,\\text{N·m}
+            \\]
+            <br><strong>d) Temps màxim de funcionament i distància recorreguda:</strong>
+            <br>
+            - Energia de la bateria:
+            \\[
+            E_{bat} = 240\\,\\text{Wh} = 240 \\times 3600\\,\\text{W·s} = 864000\\,\\text{J}
+            \\]
+            - Temps de funcionament:
+            \\[
+            t = \\frac{E_{bat}}{P_{cons}} = \\frac{864000\\,\\text{J}}{75\\,\\text{W}} = 11520\\,\\text{s} = 3,2\\,\\text{h}
+            \\]
+            - Distància màxima recorreguda:
+            \\[
+            s_{rec} = v \\times t = 1,028\\,\\text{m/s} \\times 11520\\,\\text{s} = 11830\\,\\text{m} = 11,83\\,\\text{km}
+            \\]
+            <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
     },
     {
