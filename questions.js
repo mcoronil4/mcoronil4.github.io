@@ -165,6 +165,7 @@ const questions = [
 Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
 <br>
 <br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
+<br><br>
                <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
