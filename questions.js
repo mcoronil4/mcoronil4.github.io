@@ -2,23 +2,18 @@ const questions = [
     {
         type: "exercicis",
         category: "energia",
-        text: `S’han instal·lat \\(n = 50\\) aerogeneradors de 3 pales en un parc eòlic. 
-               El diàmetre de l’àrea d’escombratge de les pales és \\(d = 77 \\, \\text{m}\\) i el rendiment dels aerogeneradors \\(\\eta_{\\text{aerog}} = 0{,}68\\). 
-               S’estima que la velocitat mitjana del vent al parc és \\(v = 25 \\, \\text{km/h}\\); el parc està en funcionament 300 dies a l’any i obté energia 18 hores diàries. 
-               La potència mitjana del vent \\(P_{\\text{vent}}\\) es pot estimar, per a un aerogenerador, com l’energia cinètica del vent per unitat de temps mitjançant l’expressió:
-               \\[
-               P_{\\text{vent}} = \\frac{1}{2} \\rho A v^3
-               \\]
-               en què \\(A\\) és l’àrea que escombren les pales de l’aerogenerador, \\(\\rho\\) és la densitat de l’aire i \\(v\\) és la velocitat del vent. 
-               D’aquesta potència, el coeficient d’aprofitament del vent és \\(c_a = 0{,}42\\).
-               
-               Sabent que \\(1{,}225 \\, \\text{g}\\) d’aire ocupen un volum d’\\(1 \\, \\text{m}^3\\), determineu:
-               <br><strong>a)</strong> La potència mitjana del vent \\(P_{\\text{vent}}\\) per a un aerogenerador. [0,5 punts]
-               <br><strong>b)</strong> La potència elèctrica útil \\(P_{\\text{útil}}\\) que generarà cada aerogenerador. [0,5 punts]
-               <br><strong>c)</strong> L’energia elèctrica total \\(E_{\\text{total}}\\) que es generarà al parc durant un any. [0,5 punts]
-               <br><strong>d)</strong> Els ingressos que tindrà el parc eòlic si el preu de venda de l’energia eòlica és \\(p_{\\text{venda}} = 7{,}624\\) cèntims d’euro per \\(\\text{kWh}\\). [0,5 punts]
-               <br><strong>e)</strong> En quin percentatge disminuirien els ingressos anteriors si la velocitat mitjana del vent es reduís un 10 %.
-               <br><br>
+        text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
+
+Utilitzant les variables d’estat següents:
+<br>Velocitat del cotxe: \\(v = \\{ 1 : \\text{superior a } 20\\,\\text{km/h} ;\\; 0 : \\text{igual o inferior a } 20\\,\\text{km/h} \\}\\)
+<br>Cinturó de seguretat: \\(c = \\{ 1 : \\text{cordat} ;\\; 0 : \\text{descordat} \\}\\)
+<br>Llums quan és fosc: \\(l = \\{ 1 : \\text{encesos} ;\\; 0 : \\text{apagats} \\}\\)
+<br>Alarma: \\(a = \\{ 1 : \\text{sona} ;\\; 0 : \\text{no sona} \\}\\)
+
+<br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
+<br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
+<br><strong>c)</strong> Dibuixeu l’esquema de contactes equivalent. [0,5 punts]
+<br><br>
                <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
