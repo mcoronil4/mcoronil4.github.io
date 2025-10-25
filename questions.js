@@ -288,34 +288,34 @@ Utilitzant les variables d’estat següents:
         correctAnswer: "a",
         steps: `
             <strong>Càlcul de la quantitat de niobi:</strong><br>
-Percentatges components:<br>
-\\[
-\\%_{\\mathrm{Ti}} = 100\\% - (5{,}5\\% + 6{,}5\\% + 0{,}25\\% + 0{,}08\\%) = 87{,}67\\%
-\\]<br>
-Massa de titani disponible:<br>
-\\[
-m_{\\mathrm{Ti}} = 250\\,\\text{kg}
-\\]<br>
-Massa total de l'aliatge (convertint el % de Ti a fracció):<br>
-\\[
-m_{\\mathrm{total}} = \\frac{m_{\\mathrm{Ti}}}{0{,}8767}
-= \\frac{250\\,\\text{kg}}{0{,}8767}
-= 285{,}16026006615715\\,\\text{kg}
-\\]<br>
-Percentatge de niobi:<br>
-\\[
-\\%_{\\mathrm{Nb}} = 6{,}5\\% = 0{,}065
-\\]<br>
-Massa de niobi necessària:<br>
-\\[
-m_{\\mathrm{Nb}} = 0{,}065 \\times 285{,}16026006615715\\,\\text{kg}
-= 18{,}535416904300217\\,\\text{kg}
-\\]<br>
-Resultat arrodonit:<br>
-\\[
-m_{\\mathrm{Nb}} \\approx 18{,}54\\,\\text{kg}
-\\]
-<br><br>
+            Percentatges components:<br>
+            \\[
+            \\%_{\\mathrm{Ti}} = 100\\% - (5{,}5\\% + 6{,}5\\% + 0{,}25\\% + 0{,}08\\%) = 87{,}67\\%
+            \\]<br>
+            Massa de titani disponible:<br>
+            \\[
+            m_{\\mathrm{Ti}} = 250\\,\\text{kg}
+            \\]<br>
+            Massa total de l'aliatge (convertint el % de Ti a fracció):<br>
+            \\[
+            m_{\\mathrm{total}} = \\frac{m_{\\mathrm{Ti}}}{0{,}8767}
+            = \\frac{250\\,\\text{kg}}{0{,}8767}
+            = 285{,}16026006615715\\,\\text{kg}
+            \\]<br>
+            Percentatge de niobi:<br>
+            \\[
+            \\%_{\\mathrm{Nb}} = 6{,}5\\% = 0{,}065
+            \\]<br>
+            Massa de niobi necessària:<br>
+            \\[
+            m_{\\mathrm{Nb}} = 0{,}065 \\times 285{,}16026006615715\\,\\text{kg}
+            = 18{,}535416904300217\\,\\text{kg}
+            \\]<br>
+            Resultat arrodonit:<br>
+            \\[
+            m_{\\mathrm{Nb}} \\approx 18{,}54\\,\\text{kg}
+            \\]
+            <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     }
