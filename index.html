@@ -5,139 +5,165 @@
     <title>Problemes de Tecnologia i Enginyeria</title>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
     <script src="questions.js" defer></script>
-    <link rel="stylesheet" href="styles.css">
-    <!--style>
-        .ocult { display: none; }
-        .visible { display: block; }
-        .correcta { color: green; }
-        .incorrecta { color: red; }
-        .solution-button { margin-top: 10px; }
-    </style-->
+    <link rel="stylesheet" href="styles5.css">
 </head>
 <body>
-    <h2>Problemes de Tecnologia i Enginyeria: Test</h2>
+<h2>
+    Problemes de Tecnologia i Enginyeria 
+    <span id="dark-toggle" style="cursor:pointer; margin-left:10px;">🌙</span>
+</h2>
 
-    <label for="type-select">Tipus de preguntes:</label>
-    <select id="type-select" onchange="renderQuiz()">
-        <option value="totes">Totes</option>
-        <option value="questions">Qüestions</option>
-        <option value="exercicis">Exercicis</option>
-    </select>
+<label for="type-select">Tipus de preguntes:</label>
+<select id="type-select" onchange="renderQuiz()">
+    <option value="totes">Totes</option>
+    <option value="questions">Qüestions</option>
+    <option value="exercicis">Exercicis</option>
+</select>
 
-    <label for="category-select">Tria una categoria:</label>
-    <select id="category-select" onchange="renderQuiz()">
-        <option value="tot">Tot</option>
-        <option value="energia">Energia</option>
-        <option value="materials_i_assaigs">Materials i assaigs</option>
-        <option value="pneumatics_hydraulics">Sistemes pneumàtics i oleohidràulics</option>
-        <option value="motors_reductors">Motors reductors</option>
-        <option value="control_logic">Control lògic i funcions lògiques</option>
-    </select>
+<label for="category-select">Tria una categoria:</label>
+<select id="category-select" onchange="renderQuiz()">
+<option value="tot">Tot</option>
+<option value="energia">Energia</option>
+<option value="materials">Materials i assaigs</option>
+<option value="metrologia">Metrologia i normalització</option>
+<option value="pneumatica">Sistemes pneumàtics i oleohidràulics</option>
+<option value="motors">Motors reductors</option>
+<option value="maquines">Principis de les màquines</option>
+<option value="electrics">Màquines i sistemes elèctrics i electrotècnics</option>
+<option value="control">Control lògic i funcions lògiques</option>
+<option value="organitzacio">Organització industrial</option>
 
-    <div id="quiz-container"></div>
+</select>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            renderQuiz();
-        });
+<div id="quiz-container"></div>
 
-        function renderQuiz() {
-            const quizContainer = document.getElementById("quiz-container");
-            const selectedCategory = document.getElementById("category-select").value;
-            const selectedType = document.getElementById("type-select").value;
+<style>
+body.dark-mode { background-color: #121212; color: #f0f0f0; }
+body { font-family: Arial, sans-serif; transition: background-color 0.3s, color 0.3s; }
+.ocult { display: none; }
+.visible { display: block; }
+.correcta { color: green; }
+.incorrecta { color: red; }
+.solution-button { margin-top: 10px; }
+.question-images { margin: 10px 0; }
+ul { padding-left: 20px; }
+</style>
+<div id="load-time" style="margin-top:20px; font-style:italic; color: #555;"></div>
 
-            quizContainer.innerHTML = '';
+<div id="load-time" style="margin-top:20px; font-style:italic; color: #555;"></div>
 
-            const filteredQuestions = questions.map((q, originalIndex) => ({...q, originalIndex})).filter(q => {
-                const categoryMatch = selectedCategory === 'tot' || q.category === selectedCategory;
-                const typeMatch = selectedType === 'totes' || q.type === selectedType;
-                return categoryMatch && typeMatch;
-            });
+<script>
+let domReadyTime = 0;  // guardarem temps DOM
 
-            filteredQuestions.forEach((q, filteredIndex) => {
-                const questionDiv = document.createElement("div");
+document.addEventListener("DOMContentLoaded", () => {
+    domReadyTime = (performance.now()).toFixed(2);
+    console.log(`DOM carregat en: ${domReadyTime} ms`);
+});
 
-                if (q.type === 'exercicis') {
-                    questionDiv.innerHTML = `
-                        <p><strong>Exercici ${q.originalIndex + 1}:</strong> ${q.text}</p>
-                        <div id="result${q.originalIndex}" class="ocult">
-                            <p><strong>Solució pas a pas:</strong></p>
-                            <p id="steps${q.originalIndex}">${q.steps}</p>
-                            ${q.answerImage ? `<img src="${q.answerImage}" alt="Imatge de la resposta" style="max-width: 100%; height: auto;">` : ''}
-                        </div>
-                        <button class="solution-button" onclick="toggleSolution(${q.originalIndex}, this)">Mostra solució</button>
-                    `;
-                } else if (q.type === 'questions') {
-                    questionDiv.innerHTML = `
-                        <p><strong>Qüestió ${q.originalIndex + 1}:</strong> ${q.text}</p>
-                        ${q.images ? `<div>${q.images}</div>` : ''}
-                        ${generateOptions(q.options, q.originalIndex, q.correctAnswer)}
-                        <div id="result${q.originalIndex}" class="ocult">
-                            <p id="answer${q.originalIndex}"></p>
-                            <p><strong>Solució pas a pas:</strong></p>
-                            <p id="steps${q.originalIndex}">${q.steps}</p>
-                            ${q.answerImage ? `<img src="${q.answerImage}" alt="Imatge de la resposta" style="max-width: 100%; height: auto;">` : ''}
-                        </div>
-                        <button class="solution-button" onclick="toggleSolution(${q.originalIndex}, this)" style="display: none;">Mostra solució</button>
-                    `;
-                }
-                quizContainer.appendChild(questionDiv);
-            });
+window.addEventListener('load', async () => {
+    const loadCompleteTime = (performance.now()).toFixed(2);
+    console.log(`Pàgina completament carregada en: ${loadCompleteTime} ms`);
 
-            MathJax.typesetPromise();
-        }
+    await MathJax.typesetPromise();
+    const mathjaxDoneTime = (performance.now()).toFixed(2);
+    console.log(`MathJax complet en: ${mathjaxDoneTime} ms`);
 
-        function generateOptions(options, originalIndex, correctAnswer) {
-            return `<ul>
-                        ${options.map((option, optionIndex) => `
-                            <li>
-                                <span class="option-letter">${option.value.toUpperCase()}</span>
-                                <button onclick="checkAnswer('${option.value}', '${correctAnswer}', 'answer${originalIndex}', 'steps${originalIndex}', 'result${originalIndex}')">
-                                    ${option.text}
-                                </button>
-                            </li>`).join('')}
-                    </ul>`;
-        }
+    const loadDiv = document.getElementById("load-time");
+    loadDiv.innerHTML = `
+        <strong>Temps de càrrega:</strong><br>
+        DOM llest: ${domReadyTime} ms<br>
+        Pàgina completa: ${loadCompleteTime} ms<br>
+        MathJax renderitzat: ${mathjaxDoneTime} ms
+    `;
+});
+</script>
 
-        function checkAnswer(selected, correctAnswer, answerId, stepsId, resultId) {
-            const answerElement = document.getElementById(answerId);
-            const stepsElement = document.getElementById(stepsId);
-            const resultElement = document.getElementById(resultId);
 
-            if (selected.trim().toLowerCase() === correctAnswer.trim().toLowerCase()) {
-                answerElement.innerHTML = "<span class='correcta'>Correcte! Has seleccionat la resposta correcta.</span>";
-            } else {
-                answerElement.innerHTML = `<span class='incorrecta'>Incorrecte. La resposta correcta és ${correctAnswer.toUpperCase()}.</span>`;
-            }
+<script>
+/* ----------------- Mode fosc ----------------- */
+const toggle = document.getElementById("dark-toggle");
+toggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+    toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    localStorage.setItem("theme", document.body.classList.contains("dark-mode") ? "dark" : "light");
+});
+document.addEventListener("DOMContentLoaded", () => {
+    if(localStorage.getItem("theme")==="dark") { document.body.classList.add("dark-mode"); toggle.textContent="☀️"; }
+});
 
-            resultElement.classList.add('visible');
-            stepsElement.innerHTML = questions.find((q, i) => `steps${i}` === stepsId).steps;
+/* ----------------- Funció auxiliar per imatges ----------------- */
+function renderImages(q) {
+    let html = '';
+    if(q.images) html += `<div class="question-images">${q.images}</div>`;
+    if(q.answerImage) html += `<img src="${q.answerImage}" alt="Imatge de la resposta" style="max-width:100%; height:auto;">`;
+    return html;
+}
 
-            MathJax.typesetPromise();
+/* ----------------- Funció per opcions ----------------- */
+function generateOptions(options, idx, correctAnswer) {
+    if(!options) return '';
+    return `<ul>${options.map(o => `
+        <li>
+            <span class="option-letter">${o.value.toUpperCase()}</span>
+            <button onclick="checkAnswer('${o.value}','${correctAnswer}','answer${idx}','steps${idx}','result${idx}')">
+                ${o.text}
+            </button>
+        </li>`).join('')}</ul>`;
+}
 
-            // Mostra el botó "Mostra solució" només per a les qüestions
-            const button = resultElement.previousElementSibling;
-            if (button && button.classList.contains('solution-button')) {
-                button.style.display = 'block';
-            }
-        }
+/* ----------------- Render Quiz combinat ----------------- */
+function renderQuiz() {
+    const quizContainer = document.getElementById("quiz-container");
+    const selectedCategory = document.getElementById("category-select").value;
+    const selectedType = document.getElementById("type-select").value;
 
-        async function toggleSolution(index, button) {
-            const resultDiv = document.getElementById(`result${index}`);
-            const isVisible = resultDiv.classList.contains('visible');
+    quizContainer.innerHTML = '';
 
-            if (isVisible) {
-                resultDiv.classList.remove('visible');
-                resultDiv.classList.add('ocult');
-                button.textContent = 'Mostra solució';
-            } else {
-                resultDiv.classList.remove('ocult');
-                resultDiv.classList.add('visible');
-                button.textContent = 'Amaga solució';
-            }
+    const filtered = questions.map((q,i)=>({...q, originalIndex:i}))
+        .filter(q => (selectedCategory==='tot' || q.category===selectedCategory)
+                  && (selectedType==='totes' || q.type===selectedType));
 
-            await MathJax.typesetPromise();
-        }
-    </script>
+    filtered.forEach(q => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            <p><strong>${q.type==='exercicis'?'Exercici':'Qüestió'} ${q.originalIndex+1}:</strong> ${q.text}</p>
+            ${renderImages(q)}
+            ${generateOptions(q.options,q.originalIndex,q.correctAnswer)}
+            <div id="result${q.originalIndex}" class="ocult">
+                <p id="answer${q.originalIndex}"></p>
+                <p><strong>Solució pas a pas:</strong></p>
+                <p id="steps${q.originalIndex}">${q.steps || ''}</p>
+            </div>
+            ${q.type==='exercicis'?`<button class="solution-button" onclick="toggleSolution(${q.originalIndex},this)">Mostra solució</button>`:''}
+        `;
+        quizContainer.appendChild(div);
+    });
+
+    MathJax.typesetPromise();
+}
+
+/* ----------------- Comprovació resposta ----------------- */
+function checkAnswer(selected, correct, answerId, stepsId, resultId) {
+    const a = document.getElementById(answerId), s = document.getElementById(stepsId), r = document.getElementById(resultId);
+    a.innerHTML = selected.trim().toLowerCase()===correct.trim().toLowerCase() 
+        ? "<span class='correcta'>Correcte! Has seleccionat la resposta correcta.</span>"
+        : `<span class='incorrecta'>Incorrecte. La resposta correcta és ${correct.toUpperCase()}.</span>`;
+    r.classList.add('visible');
+    const btn = r.previousElementSibling;
+    if(btn && btn.classList.contains('solution-button')) btn.style.display='block';
+    MathJax.typesetPromise();
+}
+
+/* ----------------- Toggle solució ----------------- */
+async function toggleSolution(idx, btn) {
+    const r = document.getElementById(`result${idx}`);
+    if(r.classList.contains('visible')) { r.classList.replace('visible','ocult'); btn.textContent='Mostra solució'; }
+    else { r.classList.replace('ocult','visible'); btn.textContent='Amaga solució'; }
+    await MathJax.typesetPromise();
+}
+
+/* ----------------- Inicialització ----------------- */
+document.addEventListener("DOMContentLoaded", renderQuiz);
+</script>
 </body>
 </html>
