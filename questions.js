@@ -1,7 +1,7 @@
 const questions = [
     {
         type: "exercicis",
-        category: "control_logic",
+        category: "control",
         text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
             Utilitzant les variables d’estat següents:
             <br>
@@ -261,7 +261,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "pneumatics_hydraulics",
+        category: "pneumatica",
         text: `Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de diàmetre \\(\\mathbf{79,5\\,mm}\\) i cursa \\(\\mathbf{80,5\\,mm}\\). Quina és la cilindrada del motor?`,
         options: [
             { text: "399,6 cm³", value: "a" },
@@ -304,7 +304,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "motors_reductors",
+        category: "motors",
         text: `Una porta corredissa automàtica és accionada mitjançant un motor que gira a \\(n_{\\text{mot}} = 1\,500\\,\\text{min}^{-1}\\) i un reductor. L’eix de sortida del reductor és un pinyó de radi primitiu \\(r = 30\\,\\text{mm}\\) que acciona una cremallera fixa a la porta. En règim nominal, la porta es trasllada a una velocitat constant \\(v_{\\text{nom}} = 0,12\\,\\text{m/s}\\). Determineu la relació de transmissió entre la velocitat angular de l’eix de sortida del reductor i la velocitat angular de l’eix del motor: \\(\\tau = \\frac{\\omega_{\\text{red}}}{\\omega_{\\text{mot}}}\\).`,
         options: [
             { text: "39,27", value: "a" },
@@ -347,7 +347,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "pneumatics_hydraulics",
+        category: "pneumatica",
         text: `Es vol aixecar una massa \\(m = 1\,200\\,\\text{kg}\\) utilitzant una premsa hidràulica. La secció transversal de l’èmbol gran és \\(A_{gran} = 30\,000\\,\\text{mm}^2\\) i la del petit és \\(A_{petit} = 1\,000\\,\\text{mm}^2\\). Preneu \\(g = 9,807\\,\\text{m/s}^2\\). Determineu la força \\(F\\) que cal exercir sobre l’èmbol petit:`,
         options: [
             { text: "353,1 kN", value: "a" },
@@ -395,7 +395,7 @@ const questions = [
     },
     {
         type: "questions", // Tipus de pregunta
-        category: "materials_i_assaigs",
+        category: "materials",
         text: `El Ti-6Al-7Nb és un aliatge biocompatible de titani àmpliament utilitzat en aplicacions quirúrgiques. Conté un \\(\\mathbf{5,5\\%}\\) d’alumini (Al), un \\(\\mathbf{6,5\\%}\\) de niobi (Nb), \\(\\mathbf{0,25\\%}\\) de ferro (Fe), un \\(\\mathbf{0,08\\%}\\) de carboni (C) i la resta és titani (Ti). En l’obtenció d’aquest aliatge, quina quantitat de niobi cal per a aliar-lo amb \\(\\mathbf{250\\,kg}\\) de titani?`,
         options: [
             { text: "18,54 kg", value: "a" },
