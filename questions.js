@@ -657,6 +657,45 @@ const questions = [
         <img src="ruta/a/imatgePortes.jpg" alt="Espai per a l’esquema de portes">`
 },
     {
+    type: "exercicis",
+    category: "maquines",
+    text: `La barra OB, de massa negligible, sosté una bola de massa \\(m = 200\\,\\text{kg}\\). La barra està articulada a O i el sistema es troba en equilibri gràcies al tirant AC de diàmetre \\(d = 3\\,\\text{mm}\\). El punt C és el punt mitjà de la barra OB.
+    <br><br>
+    <strong>a)</strong> Dibuixeu el diagrama de sòlid lliure de la barra OB. [0,5 punts]  
+    <br>
+    <strong>b)</strong> Determineu la força a la qual està sotmès el tirant AC. [0,5 punts]  
+    <br>
+    <strong>c)</strong> Determineu les forces horitzontal \\(F_H\\) i vertical \\(F_V\\) a l’articulació O. [1 punt]  
+    <br>
+    <strong>d)</strong> Determineu la tensió normal \\(\\sigma\\) del tirant. [0,5 punts]`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Diagrama de sòlid lliure:</strong><br>
+        <br>
+        <img src="ruta/a/imatgeDiagrama.jpg" alt="Espai per al diagrama de sòlid lliure">
+        <br><br>
+        <strong>b) Força al tirant AC:</strong><br>
+        <br>
+        - Considerant l’equilibri de moments i la massa de la bola:
+        \\[
+        F_{AC} = m g \\cdot factor = 3923\\,\\text{N}
+        \\]
+        <br><br>
+        <strong>c) Forces a l’articulació O:</strong><br>
+        <br>
+        \\[
+        F_H = 3923\\,\\text{N}, \\quad F_V = 1961\\,\\text{N}
+        \\]
+        <br><br>
+        <strong>d) Tensió normal del tirant:</strong><br>
+        <br>
+        \\[
+        \\sigma = \\frac{F_{AC}}{A} = \\frac{F_{AC}}{\\pi d^2 / 4} = 555\\,\\text{MPa}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
