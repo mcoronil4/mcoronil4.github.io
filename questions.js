@@ -481,5 +481,59 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "metrologia",
+    text: `Quin serà el valor de \\(L\\) si la figura compleix les toleràncies indicades?`,
+    options: [
+        { text: "14\\(^{+0,105}_{-0,02}\\)", value: "a" },
+        { text: "14\\(^{+0,008}_{-0,02}\\)", value: "b" },
+        { text: "14\\(^{+0,005}_{-0,02}\\)", value: "c" },
+        { text: "14\\(^{+0,005}_{-0,05}\\)", value: "d" }
+    ],
+    correctAnswer: "a",
+    steps: `
+        <strong>Càlcul de la dimensió \\(L\\) amb toleràncies:</strong><br>
+        De la figura es dedueix que la longitud total és:<br>
+        \\[
+        31 = 17 + L
+        \\]<br>
+        Per tant, el valor nominal de \\(L\\) és:<br>
+        \\[
+        L = 31 - 17 = 14\\,\\text{mm}
+        \\]<br><br>
+        <strong>Càlcul de les toleràncies:</strong><br>
+        Tolerància superior de 31:<br>
+        \\[
+        +0,1\\,\\text{mm}
+        \\]<br>
+        Tolerància inferior de 31:<br>
+        \\[
+        0\\,\\text{mm}
+        \\]<br><br>
+        Tolerància superior de 17:<br>
+        \\[
+        +0,02\\,\\text{mm}
+        \\]<br>
+        Tolerància inferior de 17:<br>
+        \\[
+        -0,005\\,\\text{mm}
+        \\]<br><br>
+        Tolerància superior de \\(L\\):<br>
+        \\[
+        +0,1 - (-0,005) = +0,105\\,\\text{mm}
+        \\]<br>
+        Tolerància inferior de \\(L\\):<br>
+        \\[
+        0 - 0,02 = -0,02\\,\\text{mm}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        L = 14^{+0,105}_{-0,02}\\,\\text{mm}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la figura amb toleràncies">`
 }
 ];
