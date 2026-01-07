@@ -905,7 +905,9 @@ const questions = [
             \\[
             E \\approx 110\\ \\text{GPa}
             \\]
-              },
+            <br><br>
+        images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q1.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+    },
     {
         type: "questions", // Tipus de pregunta
         category: "pneumatica",
