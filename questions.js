@@ -636,8 +636,8 @@ const questions = [
     text: `Una bombona d’aire de busseig conté \\(15\\,\\text{L}\\) a \\(20\\,°\\text{C}\\) i \\(22\\,\\text{MPa}\\). Considerant que té un comportament de gas ideal, determineu el volum d’aquest aire quan es troba a la mateixa temperatura, però a una pressió de \\(1\\,013\\,\\text{hPa}\\).`,
     options: [
         { text: "217,2 L", value: "a" },
-        { text: "3,258 m^{3}", value: "b" },
-        { text: "2,962 m^{3}", value: "c" },
+        { text: "3,258 m^3", value: "b" },
+        { text: "2,962 m^3", value: "c" },
         { text: "3,258 L", value: "d" }
     ],
     correctAnswer: "b",
@@ -649,7 +649,7 @@ const questions = [
         \\]<br>
         On:<br>
         \\[
-        P_1 = 22\\,\\text{MPa} = 22 \\times 10^6\\,\\text{Pa}, \\quad V_1 = 15\\,\\text{L} = 0,015\\,\\text{m^{3}}
+        P_1 = 22\\,\\text{MPa} = 22 \\times 10^6\\,\\text{Pa}, \\quad V_1 = 15\\,\\text{L} = 0,015\\,\\text{m^3}
         \\]<br>
         \\[
         P_2 = 1\\,013\\,\\text{hPa} = 1,013 \\times 10^5\\,\\text{Pa}
@@ -659,11 +659,11 @@ const questions = [
         V_2 = \\frac{P_1 V_1}{P_2} = \\frac{22 \\times 10^6 \\cdot 0,015}{1,013 \\times 10^5}
         \\]<br>
         \\[
-        V_2 \\approx 3,258\\,\\text{m^{3}}
+        V_2 \\approx 3,258\\,\\text{m^3}
         \\]<br><br>
         Resultat final:<br>
         \\[
-        V_2 = 3,258\\,\\text{m^{3}}
+        V_2 = 3,258\\,\\text{m^3}
         \\]
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
