@@ -257,6 +257,50 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
+    type: "exercicis",
+    category: "maquines",
+    text: `Un calefactor elèctric consta de dues resistències idèntiques \\(R_1\\) i \\(R_2\\) que es poden connectar en sèrie o en paral·lel en funció d’un selector que permet triar dos nivells de potència diferents. El fil de cada resistència té una llargària \\(L = 20\\,\\text{m}\\), un diàmetre \\(d = 0,1\\,\\text{mm}\\) i una resistivitat \\(\\rho = 16 \\times 10^{-9}\\,\\Omega\\,\\text{m}\\). El calefactor es connecta a una tensió \\(U = 230\\,\\text{V}\\). Determineu:
+    <br><br><strong>a)</strong> La resistència \\(R_1\\). [0,5 punt]
+    <br><strong>b)</strong> La resistència màxima \\(R_{màx}\\) i mínima \\(R_{mín}\\) del circuit elèctric. [1 punt]
+    <br><strong>c)</strong> La potència màxima que consumeix el calefactor \\(P_{màx}\\). [0,5 punts]
+    <br><strong>d)</strong> Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW h consumit és de \\(p = 0,15\\,€/(\\text{kW·h})\\), determineu el cost mensual \\(c\\). [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del calefactor">`,
+    correctAnswer: "",  // Exercici obert
+    steps: `
+        <strong>a) Resistència de cada fil \\(R_1\\):</strong>
+        <br>
+        - Fórmula de resistència d’un conductor:
+        \\[
+        R_1 = \\rho \\frac{L}{A} = \\rho \\frac{L}{\\pi (d/2)^2}
+        \\]<br>
+        \\[
+        R_1 = 16 \\times 10^{-9} \\frac{20}{\\pi (0,0001/2)^2} \\approx 40,74\\,\\Omega
+        \\]
+        <br><strong>b) Resistència màxima i mínima del circuit:</strong>
+        <br>
+        - Connexió en sèrie: \\(R_{màx} = R_1 + R_2 = 40,74 + 40,74 = 81,49\\,\\Omega\\)<br>
+        - Connexió en paral·lel: \\(R_{mín} = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{40,74^2}{81,49} \\approx 20,37\\,\\Omega\\)
+        <br><strong>c) Potència màxima consumida \\(P_{màx}\\):</strong>
+        <br>
+        - Potència elèctrica:
+        \\[
+        P_{màx} = \\frac{U^2}{R_{mín}} = \\frac{230^2}{20,37} \\approx 2597\\,\\text{W} = 2,597\\,\\text{kW}
+        \\]
+        <br><strong>d) Cost mensual del consum:</strong>
+        <br>
+        - Energia consumida en un mes:
+        \\[
+        E = P_{màx} \\cdot t_{mes} = 2,597\\,\\text{kW} \\times 30\\,\\text{h} = 77,91\\,\\text{kW·h}
+        \\]<br>
+        - Cost mensual:
+        \\[
+        c = E \\cdot p = 77,91 \\times 0,15 \\approx 11,69\\,€
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
