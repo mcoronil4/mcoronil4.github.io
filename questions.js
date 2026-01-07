@@ -17,7 +17,7 @@ const questions = [
     correctAnswer: "",  // Exercici obert, no és necessari
     steps: `
         <strong>a) Taula de veritat:</strong>
-        <br>dejame para que yo ponga una imagen
+        <br>
         <br><br>
         <strong>b) Funció lògica simplificada:</strong>
         <br>\\[
@@ -25,7 +25,7 @@ const questions = [
         \\]
         <br><br>
         <strong>c) Esquema de contactes equivalent:</strong>
-        <br>dejame para que yo ponga una imagen
+        <br>
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">
     `,
