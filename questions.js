@@ -833,7 +833,7 @@ const questions = [
     <br>
     <strong>c)</strong> L’energia que consumirà diàriament \\(E_{cons}\\). [0,5 punts]  
     <br>
-    <strong>d)</strong> El cost diari de l’energia consumida \\(c_{diari}\\) per la planxa de cabells si el cost del kilowatt hora és \\(c = 0,12\\,€/(\\text{kWh})\\). [0,5 punts]`,
+    <strong>d)</strong> El cost diari de l’energia consumida \\(c_{diari}\\) per la planxa de cabells si el cost del kilowatt hora és 0,12 € per kWh. [0,5 punts]`,
     correctAnswer: "",
     steps: `
         <strong>a) Corrent total:</strong><br>
@@ -857,14 +857,8 @@ const questions = [
         \\]
         <br><br>
         <strong>d) Cost diari:</strong><br>
-        - Energia en kWh:
-        \\[
-        E_{kWh} = \\frac{E_{cons}}{3,6 \\cdot 10^6} = \\frac{32,65 \\cdot 10^6}{3,6 \\cdot 10^6} \\approx 9,07\\,\\text{kWh}
-        \\]<br>
-        - Cost diari:
-        \\[
-        c_{diari} = E_{kWh} \\cdot 0,12\\,€ \\approx 1,088\\,€
-        \\]
+        - Energia en kWh: 32,65 MJ ÷ 3,6 ≈ 9,07 kWh<br>
+        - Cost diari: 9,07 kWh × 0,12 € = 1,088 €  
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
