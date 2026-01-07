@@ -865,7 +865,6 @@ const questions = [
         \\[
         c_{diari} = E_{kWh} \\cdot 0,12\\,€ \\approx 1,088\\,€
         \\]
-        <br><br>
     },
     {
         type: "questions", // Tipus de pregunta
