@@ -302,7 +302,7 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "maquines",
+    category: "control",
     text: `Es té un sistema combinatori binari de 3 entrades que controla l’encesa d’un cartell lluminós. El cartell s’il·lumina si el conjunt dels 3 dígits d’entrada és un número capicua.
     <br><br>
     Utilitzant les variables d’estat següents:<br>
