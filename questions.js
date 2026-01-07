@@ -579,5 +579,55 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb el vehicle elèctric">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "energia",
+    text: `En una terrassa de bar hi ha instaŀlades \\(4\\) estufes de butà que funcionen \\(8\\) hores cada dia. El consum de cadascuna d’elles és de \\(600\\,\\text{g/h}\\) de butà. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió de \\(2,96\\,\\text{kg de CO}_2/\\text{kg de butà}\\) i un factor de \\(2,79\\,\\text{kg de CO}_2/\\text{L de gasoil}\\). Quants quilòmetres es podran recórrer amb un cotxe de gasoil que té un consum de \\(5,4\\,\\text{L}/100\\,\\text{km}\\) fins a emetre la mateixa quantitat de \\(\\text{CO}_2\\) que les \\(4\\) estufes del bar funcionant \\(1\\) dia?`,
+    options: [
+        { text: "355,6 km", value: "a" },
+        { text: "94,31 km", value: "b" },
+        { text: "377,2 km", value: "c" },
+        { text: "47,15 km", value: "d" }
+    ],
+    correctAnswer: "c",
+    steps: `
+        <strong>Càlcul de les emissions de CO₂ de les estufes:</strong><br>
+        Consum diari d’una estufa:<br>
+        \\[
+        600\\,\\text{g/h} \\cdot 8\\,\\text{h} = 4800\\,\\text{g} = 4,8\\,\\text{kg}
+        \\]<br>
+        Consum total de les 4 estufes:<br>
+        \\[
+        4 \\cdot 4,8 = 19,2\\,\\text{kg de butà}
+        \\]<br>
+        Emissions de CO₂ del butà:<br>
+        \\[
+        19,2\\,\\text{kg} \\cdot 2,96 = 56,83\\,\\text{kg de CO}_2
+        \\]<br><br>
+        <strong>Equivalent en gasoil:</strong><br>
+        Litres de gasoil necessaris per emetre la mateixa quantitat de CO₂:<br>
+        \\[
+        L = \\frac{56,83}{2,79} = 20,37\\,\\text{L}
+        \\]<br><br>
+        <strong>Distància recorreguda amb el cotxe:</strong><br>
+        Consum del vehicle:<br>
+        \\[
+        5,4\\,\\text{L}/100\\,\\text{km}
+        \\]<br>
+        Distància recorreguda:<br>
+        \\[
+        d = \\frac{20,37}{5,4} \\cdot 100
+        \\]<br>
+        \\[
+        d = 377,2\\,\\text{km}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        d = 377,2\\,\\text{km}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb les estufes de butà">`
 }
 ];
