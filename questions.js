@@ -258,7 +258,7 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "maquines",
+    category: "electrics",
     text: `Un calefactor elèctric consta de dues resistències idèntiques \\(R_1\\) i \\(R_2\\) que es poden connectar en sèrie o en paral·lel en funció d’un selector que permet triar dos nivells de potència diferents. El fil de cada resistència té una llargària \\(L = 20\\,\\text{m}\\), un diàmetre \\(d = 0,1\\,\\text{mm}\\) i una resistivitat \\(\\rho = 16 \\times 10^{-9}\\,\\Omega\\,\\text{m}\\). El calefactor es connecta a una tensió \\(U = 230\\,\\text{V}\\). Determineu:
     <br><br><strong>a)</strong> La resistència \\(R_1\\). [0,5 punt]
     <br><strong>b)</strong> La resistència màxima \\(R_{màx}\\) i mínima \\(R_{mín}\\) del circuit elèctric. [1 punt]
