@@ -393,6 +393,80 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
+    type: "exercicis",
+    category: "energia",
+    text: `Un cotxe de benzina de massa \\(m = 1\\,650\\,\\text{kg}\\) es desplaça per un terreny horitzontal i accelera de \\(v_1 = 80\\,\\text{km/h}\\) a \\(v_2 = 120\\,\\text{km/h}\\) en un temps \\(t = 6,9\\,\\text{s}\\).
+    <br><br>
+    El poder calorífic de la benzina és \\(p = 46\\,\\text{MJ/kg}\\) i la seva densitat és \\(\\rho = 0,72\\,\\text{g/cm}^3\\).
+    El rendiment del conjunt motor–transmissió és \\(\\eta = 0,4\\).
+    Suposant negligible la fricció amb l’aire, determineu:
+    <br><br>
+    <strong>a)</strong> La potència mitjana desenvolupada pel motor \\(P_{\\text{útil}}\\). [1 punt]
+    <br>
+    <strong>b)</strong> L’energia consumida \\(E_{\\text{cons}}\\). [0,5 punts]
+    <br>
+    <strong>c)</strong> El volum de combustible utilitzat \\(V\\). [1 punt]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb el moviment del vehicle">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Potència mitjana desenvolupada pel motor:</strong><br>
+        <br>
+        - Conversió de velocitats a unitats del SI:
+        \\[
+        v_1 = 80\\,\\text{km/h} = 22,22\\,\\text{m/s}, \\quad
+        v_2 = 120\\,\\text{km/h} = 33,33\\,\\text{m/s}
+        \\]
+        <br>
+        - Variació de l’energia cinètica:
+        \\[
+        \\Delta E_c = \\frac{1}{2} m \\left(v_2^2 - v_1^2\\right)
+        \\]
+        \\[
+        \\Delta E_c = \\frac{1}{2} \\cdot 1650 \\cdot (33,33^2 - 22,22^2) = 509\\,300\\,\\text{J}
+        \\]
+        <br>
+        - Potència útil mitjana:
+        \\[
+        P_{\\text{útil}} = \\frac{\\Delta E_c}{t} = \\frac{509\\,300}{6,9} = 73\\,810\\,\\text{W}
+        \\]
+        \\[
+        P_{\\text{útil}} = 73,81\\,\\text{kW}
+        \\]
+        <br><br>
+        <strong>b) Energia consumida:</strong><br>
+        <br>
+        - Tenint en compte el rendiment:
+        \\[
+        E_{\\text{cons}} = \\frac{\\Delta E_c}{\\eta} = \\frac{509\\,300}{0,4} = 1\\,273\\,250\\,\\text{J}
+        \\]
+        \\[
+        E_{\\text{cons}} = 1\\,273\\,\\text{kJ}
+        \\]
+        <br><br>
+        <strong>c) Volum de combustible utilitzat:</strong><br>
+        <br>
+        - Massa de combustible consumida:
+        \\[
+        m_{\\text{comb}} = \\frac{E_{\\text{cons}}}{p} = \\frac{1\\,273\\,250}{46 \\times 10^6} = 0,0277\\,\\text{kg}
+        \\]
+        <br>
+        - Conversió de densitat:
+        \\[
+        \\rho = 0,72\\,\\text{g/cm}^3 = 720\\,\\text{kg/m}^3
+        \\]
+        <br>
+        - Volum de combustible:
+        \\[
+        V = \\frac{m_{\\text{comb}}}{\\rho} = \\frac{0,0277}{720} = 3,844 \\times 10^{-5}\\,\\text{m}^3
+        \\]
+        \\[
+        V = 38,44\\,\\text{cm}^3
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
