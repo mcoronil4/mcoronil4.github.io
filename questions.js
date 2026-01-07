@@ -467,6 +467,110 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
+    type: "exercicis",
+    category: "motors",
+    text: `Una cadira de rodes elèctrica utilitza una bateria ideal de capacitat \\(c = 74\\,\\text{Ah}\\) i tensió \\(U = 12\\,\\text{V}\\) per a avançar per una pujada on l’angle que forma el perfil del carrer amb l’horitzontal és \\(\\alpha_1 = 6°\\).
+    <br><br>
+    La massa del conjunt persona més cadira és \\(m = 190\\,\\text{kg}\\) i avancen a una velocitat constant \\(v = 5\\,\\text{km/h}\\).
+    El rendiment del conjunt motor–reductor és \\(\\eta = 0,81\\).
+    Si la fricció amb l’aire es considera negligible, determineu:
+    <br><br>
+    <strong>a)</strong> La potència consumida pel motor \\(P_{\\text{cons}}\\). [0,5 punts]
+    <br>
+    <strong>b)</strong> L’energia disponible a la bateria \\(E_{\\text{bat}}\\). [0,5 punts]
+    <br>
+    <strong>c)</strong> El temps màxim de funcionament \\(t_{\\text{màx}}\\) de la cadira i la distància màxima \\(s_{\\text{màx}}\\) recorreguda en les condicions descrites. [1 punt]
+    <br>
+    <strong>d)</strong> La reducció de la distància màxima recorreguda \\(\\Delta s\\) si, a la mateixa velocitat, la inclinació fos \\(\\alpha_2 = 10°\\). [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la cadira de rodes">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Potència consumida pel motor:</strong><br>
+        <br>
+        - Conversió de la velocitat:
+        \\[
+        v = 5\\,\\text{km/h} = 1,389\\,\\text{m/s}
+        \\]
+        <br>
+        - Força necessària per pujar el pendent:
+        \\[
+        F = m g \\sin(\\alpha_1)
+        \\]
+        \\[
+        F = 190 \\cdot 9,81 \\cdot \\sin(6°) = 194,9\\,\\text{N}
+        \\]
+        <br>
+        - Potència mecànica útil:
+        \\[
+        P_{\\text{útil}} = F \\cdot v = 194,9 \\cdot 1,389 = 270,7\\,\\text{W}
+        \\]
+        <br>
+        - Potència consumida:
+        \\[
+        P_{\\text{cons}} = \\frac{P_{\\text{útil}}}{\\eta} = \\frac{270,7}{0,81} = 334\\,\\text{W}
+        \\]
+        <br><br>
+        <strong>b) Energia disponible a la bateria:</strong><br>
+        <br>
+        - Energia en Wh:
+        \\[
+        E_{\\text{bat}} = U \\cdot c = 12 \\cdot 74 = 888\\,\\text{Wh}
+        \\]
+        <br>
+        - Conversió a joules:
+        \\[
+        E_{\\text{bat}} = 888 \\cdot 3600 = 3\\,196\\,800\\,\\text{J}
+        \\]
+        \\[
+        E_{\\text{bat}} = 3\\,197\\,\\text{kJ}
+        \\]
+        <br><br>
+        <strong>c) Temps i distància màxima recorreguda:</strong><br>
+        <br>
+        - Temps màxim de funcionament:
+        \\[
+        t_{\\text{màx}} = \\frac{E_{\\text{bat}}}{P_{\\text{cons}}} = \\frac{3\\,196\\,800}{334} = 9\\,570\\,\\text{s}
+        \\]
+        \\[
+        t_{\\text{màx}} = 2,659\\,\\text{h}
+        \\]
+        <br>
+        - Distància màxima:
+        \\[
+        s_{\\text{màx}} = v \\cdot t = 5 \\cdot 2,659 = 13,29\\,\\text{km}
+        \\]
+        <br><br>
+        <strong>d) Reducció de la distància amb \\(\\alpha_2 = 10°\\):</strong><br>
+        <br>
+        - Nova força:
+        \\[
+        F_2 = m g \\sin(10°) = 323,5\\,\\text{N}
+        \\]
+        <br>
+        - Nova potència consumida:
+        \\[
+        P_{\\text{cons},2} = \\frac{F_2 \\cdot v}{\\eta} = \\frac{323,5 \\cdot 1,389}{0,81} = 555\\,\\text{W}
+        \\]
+        <br>
+        - Nou temps de funcionament:
+        \\[
+        t_2 = \\frac{E_{\\text{bat}}}{P_{\\text{cons},2}} = 1,25\\,\\text{h}
+        \\]
+        <br>
+        - Nova distància:
+        \\[
+        s_2 = 5 \\cdot 1,25 = 8,00\\,\\text{km}
+        \\]
+        <br>
+        - Reducció de distància:
+        \\[
+        \\Delta s = 13,29 - 8,00 = 5,292\\,\\text{km}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
