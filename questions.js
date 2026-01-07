@@ -213,6 +213,50 @@ const questions = [
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
     },
     {
+    type: "exercicis",
+    category: "energia",
+    text: `El fanal de massa \\(m = 30\\,\\text{kg}\\) penja del punt mitjà de la barra \\(BO\\) de longitud \\(L_{BO} = 2L\\), que està articulada a la paret en el punt \\(O\\). El tirant \\(AB\\) és d’acer (de límit elàstic \\(\\sigma = 250\\,\\text{MPa}\\)) i té un diàmetre \\(d = 4\\,\\text{mm}\\) que manté el sistema en equilibri (vegeu la figura). Les masses de tots els elements excepte la del fanal són negligibles.<br>
+    Determineu:
+    <br><br><strong>a)</strong> Dibuixeu el diagrama de cos lliure de la barra \\(BO\\). [0,5 punts]
+    <br><strong>b)</strong> La força \\(T_{AB}\\) a la qual està sotmès el tirant. [0,5 punts]
+    <br><strong>c)</strong> La tensió \\(\\sigma_{AB}\\) del tirant. [0,5 punts]
+    <br><strong>d)</strong> Les forces horitzontal \\(F_H\\) i vertical \\(F_V\\) a l’articulació \\(O\\). [0,5 punts]
+    <br><strong>e)</strong> Què passaria si el diàmetre del cable d’acer fos \\(d' = 1\\,\\text{mm}\\)? Justifiqueu breument la resposta. [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del diagrama de la barra amb fanal">`,
+    correctAnswer: "",  // Exercici obert
+    steps: `
+        <strong>a) Diagrama de cos lliure:</strong>
+        <br>
+        <img src="ruta/a/imatgeDiagrama.jpg" alt="Imatge per al diagrama de cos lliure">
+        <br><br><strong>b) Força al tirant \\(T_{AB}\\):</strong>
+        <br>
+        - Calculant l’equilibri de moments respecte al punt \\(O\\):<br>
+        \\[
+        T_{AB} = 254,8\\,\\text{N}
+        \\]
+        <br><strong>c) Tensió del tirant \\(\\sigma_{AB}\\):</strong>
+        <br>
+        - Tensió en el tirant d’acer (àrea transversal \\(A = \\pi d^2/4\\)):<br>
+        \\[
+        \\sigma_{AB} = 20,28\\,\\text{MPa}
+        \\]
+        <br><strong>d) Forces a l’articulació \\(O\\):</strong>
+        <br>
+        \\[
+        F_H = 254,8\\,\\text{N}, \\quad F_V = 294,2\\,\\text{N}
+        \\]
+        <br><strong>e) Diàmetre reduït \\(d' = 1\\,\\text{mm}\\):</strong>
+        <br>
+        - Nova tensió al tirant:<br>
+        \\[
+        \\sigma'_{AB} = 324,4\\,\\text{MPa}
+        \\]<br>
+        - Com que \\(\\sigma'_{AB}\\) és superior al límit elàstic del material (250 MPa), el tirant es deformaria permanentment i de manera irreversible. No podria mantenir la posició d’equilibri estudiada.
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
