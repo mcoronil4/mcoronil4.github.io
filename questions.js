@@ -772,5 +772,40 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge del cotxe i recorregut">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "pneumatica",
+    text: `Una motocicleta té un motor de quatre temps amb un sol cilindre de \\(52,4\\,\\text{mm}\\) de diàmetre i una cursa de \\(57,8\\,\\text{mm}\\). A quina categoria de cilindrada pertany la motocicleta?`,
+    options: [
+        { text: "125 cm³", value: "a" },
+        { text: "250 cm³", value: "b" },
+        { text: "1 000 cm³", value: "c" },
+        { text: "50 cm³", value: "d" }
+    ],
+    correctAnswer: "a",
+    steps: `
+        <strong>Càlcul de la cilindrada del cilindre:</strong><br>
+        La cilindrada d'un cilindre es calcula com:<br>
+        \\[
+        V = \\pi \\frac{D^2}{4} \\cdot C
+        \\]<br>
+        On:<br>
+        \\[
+        D = 52,4\\,\\text{mm} = 5,24\\,\\text{cm}, \\quad C = 57,8\\,\\text{mm} = 5,78\\,\\text{cm}
+        \\]<br>
+        \\[
+        V = \\pi \\cdot \\frac{5,24^2}{4} \\cdot 5,78
+        \\]<br>
+        \\[
+        V \\approx 125\\,\\text{cm³}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        V = 125\\,\\text{cm³}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la motocicleta">`
 }
 ];
