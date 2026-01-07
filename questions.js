@@ -696,53 +696,6 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
-        type: "questions", // Tipus de pregunta
-        category: "materials",
-        text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
-        options: [
-            { text: "250 GPa", value: "a" },
-            { text: "110 GPa", value: "b" },
-            { text: "265 GPa", value: "c" },
-            { text: "62,5 GPa", value: "d" }
-        ],
-        correctAnswer: "b",
-        steps: `
-            <strong>Càlcul del mòdul elàstic:</strong>
-            <br><br>
-            Tensió aplicada:
-            \\[
-            \\sigma = 250\\ \\text{MPa}
-            \\]
-            \\[
-            250\\ \\text{MPa} = 250 \\times 10^6\\ \\text{Pa}
-            \\]
-            <br>
-            Deformació:
-            \\[
-            \\varepsilon = 0,00227
-            \\]
-            <br>
-            Mòdul elàstic:
-            \\[
-            E = \\frac{\\sigma}{\\varepsilon}
-            \\]
-            \\[
-            E = \\frac{250 \\times 10^6\\ \\text{Pa}}{0,00227}
-            \\]
-            \\[
-            E = 110132158590,30838\\ \\text{Pa}
-            \\]
-            \\[
-            E = 110,13215859030838\\ \\text{GPa}
-            \\]
-            \\[
-            E \\approx 110\\ \\text{GPa}
-            \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-        images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q1.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
-    },
-    {
     type: "exercicis",
     category: "energia",
     text: `Una central hidroelèctrica aprofita l’energia d’un salt d’aigua d’altura \\(h = 61,9\\,\\text{m}\\). La central funciona 8 hores al dia, 310 dies l’any, amb un cabal mitjà \\(q = 35\\,\\text{m³/s}\\). El rendiment de la central és \\(\\eta_{central} = 0,93\\).  
@@ -809,6 +762,53 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
+    {
+        type: "questions", // Tipus de pregunta
+        category: "materials",
+        text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
+        options: [
+            { text: "250 GPa", value: "a" },
+            { text: "110 GPa", value: "b" },
+            { text: "265 GPa", value: "c" },
+            { text: "62,5 GPa", value: "d" }
+        ],
+        correctAnswer: "b",
+        steps: `
+            <strong>Càlcul del mòdul elàstic:</strong>
+            <br><br>
+            Tensió aplicada:
+            \\[
+            \\sigma = 250\\ \\text{MPa}
+            \\]
+            \\[
+            250\\ \\text{MPa} = 250 \\times 10^6\\ \\text{Pa}
+            \\]
+            <br>
+            Deformació:
+            \\[
+            \\varepsilon = 0,00227
+            \\]
+            <br>
+            Mòdul elàstic:
+            \\[
+            E = \\frac{\\sigma}{\\varepsilon}
+            \\]
+            \\[
+            E = \\frac{250 \\times 10^6\\ \\text{Pa}}{0,00227}
+            \\]
+            \\[
+            E = 110132158590,30838\\ \\text{Pa}
+            \\]
+            \\[
+            E = 110,13215859030838\\ \\text{GPa}
+            \\]
+            \\[
+            E \\approx 110\\ \\text{GPa}
+            \\]
+            <br><br>
+            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+        images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q1.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+    },
     {
         type: "questions", // Tipus de pregunta
         category: "pneumatica",
