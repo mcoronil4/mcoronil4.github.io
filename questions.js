@@ -743,6 +743,73 @@ const questions = [
         images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q1.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     },
     {
+    type: "exercicis",
+    category: "energia",
+    text: `Una central hidroelèctrica aprofita l’energia d’un salt d’aigua d’altura \\(h = 61,9\\,\\text{m}\\). La central funciona 8 hores al dia, 310 dies l’any, amb un cabal mitjà \\(q = 35\\,\\text{m³/s}\\). El rendiment de la central és \\(\\eta_{central} = 0,93\\).  
+    Determineu:
+    <br><br>
+    <strong>a)</strong> La potència \\(P_{aigua}\\) que es pot obtenir amb el salt d’aigua. [0,5 punts]  
+    <br>
+    <strong>b)</strong> La potència que subministra la central \\(P_{subm}\\). [0,5 punts]  
+    <br>
+    <strong>c)</strong> L’energia diària útil \\(E_{útil}\\) generada. [0,5 punts]  
+    <br>
+    <strong>d)</strong> Quants habitatges es podrien abastir amb aquesta central si el consum mitjà elèctric d’un habitatge a Catalunya és \\(E_{cons} = 3\\,487\\,\\text{kW·h/any}\\). [1 punt]  
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la central hidroelèctrica">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Potència de l’aigua:</strong><br>
+        <br>
+        - Fórmula de potència hidràulica:
+        \\[
+        P_{aigua} = \\rho g q h
+        \\]
+        Amb \\(\\rho = 1000\\,\\text{kg/m³},\\ g = 9,81\\,\\text{m/s²}\\):
+        \\[
+        P_{aigua} = 1000 \\cdot 9,81 \\cdot 35 \\cdot 61,9
+        \\]
+        \\[
+        P_{aigua} = 21,25\\,\\text{MW}
+        \\]
+        <br><br>
+        <strong>b) Potència subministrada per la central:</strong><br>
+        \\[
+        P_{subm} = P_{aigua} \\cdot \\eta_{central} = 21,25 \\cdot 0,93
+        \\]
+        \\[
+        P_{subm} = 19,77\\,\\text{MW}
+        \\]
+        <br><br>
+        <strong>c) Energia diària útil generada:</strong><br>
+        - Temps de funcionament diari:
+        \\[
+        t = 8\\,\\text{h} = 8 \\cdot 3600\\,\\text{s} = 28\\,800\\,\\text{s}
+        \\]
+        - Energia diària:
+        \\[
+        E_{útil} = P_{subm} \\cdot t = 19,77\\cdot 10^6 \\cdot 28\\,800
+        \\]
+        \\[
+        E_{útil} = 569,1 \\cdot 10^9\\,\\text{J}
+        \\]
+        <br><br>
+        <strong>d) Nombre d’habitatges abastits:</strong><br>
+        - Consum anual per habitatge:
+        \\[
+        E_{cons} = 3\\,487\\,\\text{kW·h} = 3,487 \\cdot 3,6\\cdot 10^6\\,\\text{J} = 12,553 \\cdot 10^6\\,\\text{J}
+        \\]
+        - Nombre d’habitatges:
+        \\[
+        N = \\frac{E_{útil\\,anual}}{E_{cons}} = \\frac{569,1 \\cdot 10^9}{12,553 \\cdot 10^6} \\approx 14\\,053
+        \\]
+        \\[
+        N \\approx 14\\,053\\,\\text{habitatges}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "pneumatica",
         text: `Un cotxe està equipat amb un motor de combustió interna de quatre cilindres en línia de diàmetre \\(\\mathbf{79,5\\,mm}\\) i cursa \\(\\mathbf{80,5\\,mm}\\). Quina és la cilindrada del motor?`,
