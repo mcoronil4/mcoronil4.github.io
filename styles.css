@@ -1,14 +1,13 @@
 /* ===== GLOBAL STYLES ===== */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(120deg, #f4f4f4, #e8e8ff);
-    color: #333;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #0f0f0f, #1a1a1a, #111, #1f1f1f);
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    transition: background 0.6s, color 0.6s;
     background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    animation: gradientShift 20s ease infinite;
 }
 
 @keyframes gradientShift {
@@ -20,18 +19,19 @@ body {
 h2 {
     text-align: center;
     margin: 20px 0;
-    color: #2c3e50;
-    transition: color 0.4s;
+    color: #ff8c42;
+    text-shadow: 0 2px 8px rgba(255,140,66,0.6);
+    transition: color 0.4s ease;
 }
 
 /* ===== QUIZ CONTAINER ===== */
 #quiz-container {
-    max-width: 800px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 25px;
+    max-width: 850px;
+    margin: 25px auto;
+    background: #1c1c1c;
+    padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
     transition: background 0.4s, color 0.4s, box-shadow 0.4s;
 }
 
@@ -41,32 +41,32 @@ label {
     display: block;
     margin-bottom: 10px;
     margin-top: 20px;
-    color: #34495e;
+    color: #ff8c42;
     transition: color 0.4s;
 }
 
 select {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #ecf0f1;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #222;
+    color: #fff;
     font-size: 16px;
-    transition: background 0.4s, color 0.4s, border 0.4s, box-shadow 0.3s;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.4s ease;
+    box-shadow: inset 0 2px 6px rgba(255,140,66,0.2);
 }
 
 /* ===== QUESTIONS & ANSWERS ===== */
-p {
-    margin: 10px 0;
+p, strong {
     font-size: 16px;
+    line-height: 1.6;
     transition: color 0.4s;
 }
 
 strong {
-    color: #2c3e50;
-    transition: color 0.4s;
+    color: #ff8c42;
 }
 
 ul {
@@ -80,67 +80,128 @@ li {
     align-items: center;
 }
 
+/* ===== OPTION BUTTONS ===== */
 .option-letter {
     font-weight: bold;
     margin-right: 10px;
 }
 
-/* ===== BUTTONS WITH GLOW ===== */
+/* Botones de opciones */
 li button {
     flex-grow: 1;
-    background: linear-gradient(145deg, #6a8aff, #4a6fff);
+    background: linear-gradient(145deg, #4a6fff, #6a8aff);
     color: white;
     border: none;
-    padding: 14px;
-    border-radius: 12px;
+    padding: 16px 18px;
+    border-radius: 14px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 0 12px rgba(74,111,255,0.6), 0 4px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 0 15px rgba(74,111,255,0.6), 0 5px 15px rgba(0,0,0,0.2);
 }
 
 li button:hover {
-    background: linear-gradient(145deg, #4a6fff, #6a8aff);
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(74,111,255,0.8), 0 6px 15px rgba(0,0,0,0.2);
+    background: linear-gradient(145deg, #6a8aff, #4a6fff);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 25px rgba(74,111,255,0.8), 0 6px 20px rgba(0,0,0,0.25);
 }
 
+/* ===== CORRECT & INCORRECT ===== */
 .correcta {
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 6px;
-    color: #00ff85;
+    background: linear-gradient(145deg, #00ff85, #00b36f);
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #0d1b12;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0,255,133,0.35), 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.correcta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,255,133,0.5), 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .incorrecta {
-    background-color: transparent;
-    padding: 10px;
-    border-radius: 6px;
-    color: #ff4c4c;
+    background: linear-gradient(145deg, #ff4c4c, #c50000);
+    padding: 12px 18px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(255,76,76,0.35), 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
 }
 
+.incorrecta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255,76,76,0.5), 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== SOLUTION BUTTON ===== */
 .solution-button {
     width: 100%;
     background: linear-gradient(145deg, #ff8c42, #e67e22);
     color: white;
     border: none;
-    padding: 14px;
-    border-radius: 12px;
+    padding: 16px;
+    border-radius: 14px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
     transition: all 0.3s ease;
-    margin-top: 20px;
-    box-shadow: 0 0 12px rgba(255,126,34,0.6), 0 4px 12px rgba(0,0,0,0.15);
+    margin-top: 25px;
+    box-shadow: 0 0 18px rgba(255,126,34,0.6), 0 6px 15px rgba(0,0,0,0.15);
 }
 
 .solution-button:hover {
     background: linear-gradient(145deg, #e67e22, #ff8c42);
-    transform: translateY(-2px);
-    box-shadow: 0 0 20px rgba(255,126,34,0.8), 0 6px 15px rgba(0,0,0,0.2);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 30px rgba(255,126,34,0.8), 0 8px 20px rgba(0,0,0,0.25);
 }
 
-.ocult { display: none; }
-.visible { display: block; }
+/* ===== VISIBILITY ===== */
+.ocult {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/* ===== IMAGES ===== */
+img {
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+/* ===== EXPLANATION BOX ===== */
+.steps-container {
+    background: #111;
+    padding: 20px;
+    border-radius: 14px;
+    color: #f0f0f0;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.5;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+}
+
+.steps-container strong {
+    color: #ff8c42;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2, h3, h4 {
+    color: #ff8c42;
+    text-shadow: 0 2px 6px rgba(255,140,66,0.6);
+}   
 
 /* ===== DARK MODE CINEMÀTIC ===== */
 body.dark-mode {
