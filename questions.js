@@ -214,7 +214,7 @@ const questions = [
     },
     {
     type: "exercicis",
-    category: "energia",
+    category: "maquines",
     text: `El fanal de massa \\(m = 30\\,\\text{kg}\\) penja del punt mitjà de la barra \\(BO\\) de longitud \\(L_{BO} = 2L\\), que està articulada a la paret en el punt \\(O\\). El tirant \\(AB\\) és d’acer (de límit elàstic \\(\\sigma = 250\\,\\text{MPa}\\)) i té un diàmetre \\(d = 4\\,\\text{mm}\\) que manté el sistema en equilibri (vegeu la figura). Les masses de tots els elements excepte la del fanal són negligibles.<br>
     Determineu:
     <br><br><strong>a)</strong> Dibuixeu el diagrama de cos lliure de la barra \\(BO\\). [0,5 punts]
