@@ -535,5 +535,49 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la figura amb toleràncies">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "energia",
+    text: `Un cotxe elèctric disposa d’una bateria ideal de capacitat \\(41\\,\\text{kW·h}\\). El motor, quan treballa en el règim de potència màxima, subministra \\(80\\,\\text{kW}\\) i consumeix \\(172\\,\\text{W·h/km}\\). En aquestes condicions, quina distància podrà recórrer el vehicle utilitzant el \\(50\\,\\%\\) de la capacitat de la bateria?`,
+    options: [
+        { text: "9,535 km", value: "a" },
+        { text: "238,4 km", value: "b" },
+        { text: "256,3 km", value: "c" },
+        { text: "119,2 km", value: "d" }
+    ],
+    correctAnswer: "d",
+    steps: `
+        <strong>Càlcul de la distància recorreguda:</strong><br>
+        Capacitat total de la bateria:<br>
+        \\[
+        41\\,\\text{kW·h}
+        \\]<br>
+        Energia utilitzada (50 % de la capacitat):<br>
+        \\[
+        E = 0,5 \\cdot 41 = 20,5\\,\\text{kW·h}
+        \\]<br>
+        Conversió a watts hora:<br>
+        \\[
+        20,5\\,\\text{kW·h} = 20500\\,\\text{W·h}
+        \\]<br>
+        Consum del vehicle:<br>
+        \\[
+        172\\,\\text{W·h/km}
+        \\]<br>
+        Distància recorreguda:<br>
+        \\[
+        d = \\frac{20500\\,\\text{W·h}}{172\\,\\text{W·h/km}}
+        \\]<br>
+        \\[
+        d = 119,19\\,\\text{km}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        d \\approx 119,2\\,\\text{km}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb el vehicle elèctric">`
 }
 ];
