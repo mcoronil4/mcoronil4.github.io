@@ -824,7 +824,7 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "maquines",
+    category: "electrics",
     text: `Una planxa de cabells professional està formada per dues resistències de valor \\(R_1 = R_2 = 70\\,\\Omega\\) connectades en paral·lel. La planxa es connecta a \\(U = 230\\,\\text{V}\\) i s’estima que està en funcionament un temps de 6 hores diàries. Determineu:
     <br><br>
     <strong>a)</strong> El corrent total \\(I_{tot}\\) que consumeix la planxa. [1 punt]  
