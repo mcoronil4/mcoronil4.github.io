@@ -1,98 +1,35 @@
 const questions = [
     {
-        type: "exercicis",
-        category: "control",
-        text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
-            Utilitzant les variables d’estat següents:
-            <br>
-            <br>Velocitat del cotxe: \\(v = \\{ 1 : \\text{superior a } 20\\,\\text{km/h} ;\\; 0 : \\text{igual o inferior a } 20\\,\\text{km/h} \\)
-            <br>Cinturó de seguretat: \\(c = \\{ 1 : \\text{cordat} ;\\; 0 : \\text{descordat} \\)
-            <br>Llums quan és fosc: \\(l = \\{ 1 : \\text{encesos} ;\\; 0 : \\text{apagats} \\)
-            <br>Alarma: \\(a = \\{ 1 : \\text{sona} ;\\; 0 : \\text{no sona} \\)
-            <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
-            <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
-            <br><strong>c)</strong> Dibuixeu l’esquema de contactes equivalent. [0,5 punts]
-            <br><br>
-               <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
-        correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
-        steps: `
-            <strong>a) Càlcul de la potència mitjana del vent \\(P_{\\text{vent}}\\) per a un aerogenerador:</strong>
-            <br>
-            - Àrea d’escombratge de les pales:
-            \\[
-            A = \\frac{\\pi d^2}{4} = \\frac{\\pi \\times (77 \\, \\text{m})^2}{4} = 4657{,}7 \\, \\text{m}^2
-            \\]
-            - Densitat de l’aire:
-            \\[
-            \\rho = \\frac{1{,}225 \\, \\text{g}}{\\text{m}^3} = 1{,}225 \\, \\frac{\\text{kg}}{\\text{m}^3}
-            \\]
-            - Velocitat del vent (en \\(\\text{m/s}\\)):
-            \\[
-            v = \\frac{25 \\, \\text{km/h}}{3{,}6} = 6{,}94 \\, \\text{m/s}
-            \\]
-            - Potència del vent:
-            \\[
-            P_{\\text{vent}} = \\frac{1}{2} \\times 1{,}225 \\, \\frac{\\text{kg}}{\\text{m}^3} \\times 4657{,}7 \\, \\text{m}^2 \\times (6{,}94 \\, \\text{m/s})^3 = 828{,}08 \\, \\text{kW}
-            \\]
-            <br>
-            <strong>b) Potència elèctrica útil \\(P_{\\text{útil}}\\) generada per cada aerogenerador:</strong>
-            <br>
-            - Aplicant el rendiment de l’aerogenerador:
-            \\[
-            P_{\\text{útil}} = P_{\\text{vent}} \\times \\eta_{\\text{aerog}} \\times c_a = 828{,}08 \\, \\text{kW} \\times 0{,}68 \\times 0{,}42 = 236{,}62 \\, \\text{kW}
-            \\]
-            <br>
-            <strong>c) Energia elèctrica total \\(E_{\\text{total}}\\) generada al parc durant un any:</strong>
-            <br>
-            - Nombre total d'hores operatives a l'any:
-            \\[
-            h = 300 \\, \\text{dies/any} \\times 18 \\, \\text{h/dia} = 5400 \\, \\text{h/any}
-            \\]
-            - Energia generada per un aerogenerador:
-            \\[
-            E_{\\text{útil}} = P_{\\text{útil}} \\times h = 236{,}62 \\, \\text{kW} \\times 5400 \\, \\text{h} = 1277{,}75 \\, \\text{MWh/any}
-            \\]
-            - Energia total generada per 50 aerogeneradors:
-            \\[
-            E_{\\text{total}} = 1277{,}75 \\, \\text{MWh/any} \\times 50 = 63{,}89 \\, \\text{GWh/any}
-            \\]
-            <br>
-            <strong>d) Ingressos del parc eòlic:</strong>
-            <br>
-            - Ingressos totals:
-            \\[
-            Ingressos = E_{\\text{total}} \\times p_{\\text{venda}} = 63{,}89 \\, \\text{GWh/any} \\times 7{,}624 \\, \\text{cèntims/kWh} = 4865{,}9 \\, \\text{k€}
-            \\]
-            <br>
-            <strong>e) Impacte d'una reducció del 10 % en la velocitat del vent:</strong>
-            <br>
-            - Nova velocitat del vent:
-            \\[
-            v_{nou} = 0{,}9 \\times v = 0{,}9 \\times 6{,}94 \\, \\text{m/s} = 6{,}25 \\, \\text{m/s}
-            \\]
-            - Nova potència del vent:
-            \\[
-            P_{\\text{vent, nou}} = \\frac{1}{2} \\times 1{,}225 \\, \\frac{\\text{kg}}{\\text{m}^3} \\times 4657{,}7 \\, \\text{m}^2 \\times (6{,}25 \\, \\text{m/s})^3 = 654{,}8 \\, \\text{kW}
-            \\]
-            - Nova potència útil:
-            \\[
-            P_{\\text{útil, nou}} = 654{,}8 \\, \\text{kW} \\times 0{,}68 \\times 0{,}42 = 187{,}19 \\, \\text{kW}
-            \\]
-            - Nova energia total:
-            \\[
-            E_{\\text{total, nou}} = 187{,}19 \\, \\text{kW} \\times 5400 \\, \\text{h} \\times 50 = 50{,}7 \\, \\text{GWh/any}
-            \\]
-            - Nous ingressos:
-            \\[
-            Ingressos_{nou} = 50{,}7 \\, \\text{GWh/any} \\times 7{,}624 \\, \\text{cèntims/kWh} = 3865{,}58 \\, \\text{k€}
-            \\]
-            - Percentatge de disminució:
-            \\[
-            \\frac{4865{,}9 - 3865{,}58}{4865{,}9} \\times 100 \\approx 20{,}6\\%
-            \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-    },
+    type: "exercicis",
+    category: "control",
+    text: `Es vol dissenyar el circuit que controla l’alarma interior d’avís d’un cotxe. Aquesta alarma ha de sonar quan el cotxe sobrepassa els \\(20\\,\\text{km/h}\\) i es compleix alguna de les condicions següents: que el conductor no porta el cinturó de seguretat cordat o que porta els llums de curt abast apagats quan és fosc. 
+        Utilitzant les variables d’estat següents:
+        <br>
+        <br>Velocitat del cotxe: \\(v = \\{ 1 : \\text{superior a } 20\\,\\text{km/h} ;\\; 0 : \\text{igual o inferior a } 20\\,\\text{km/h} \\)
+        <br>Cinturó de seguretat: \\(c = \\{ 1 : \\text{cordat} ;\\; 0 : \\text{descordat} \\)
+        <br>Llums quan és fosc: \\(l = \\{ 1 : \\text{encesos} ;\\; 0 : \\text{apagats} \\)
+        <br>Alarma: \\(a = \\{ 1 : \\text{sona} ;\\; 0 : \\text{no sona} \\)
+        <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
+        <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
+        <br><strong>c)</strong> Dibuixeu l’esquema de contactes equivalent. [0,5 punts]
+        <br><br>
+           <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,
+    correctAnswer: "",  // Exercici obert, no és necessari
+    steps: `
+        <strong>a) Taula de veritat:</strong>
+        <br>dejame para que yo ponga una imagen
+        <br><br>
+        <strong>b) Funció lògica simplificada:</strong>
+        <br>\\[
+        a = v \\cdot (\\overline{c} + \\overline{l})
+        \\]
+        <br><br>
+        <strong>c) Esquema de contactes equivalent:</strong>
+        <br>dejame para que yo ponga una imagen
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">
+    `,
+},
     {
         type: "exercicis",
         category: "energia",
