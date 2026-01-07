@@ -708,5 +708,33 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la proveta d'acer">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "metrologia",
+    text: `En un ajust \\(100\\,E11/f7\\), la tolerància del forat és \\(100^{+292}_{+72}\\,\\mu\\text{m}\\) i la de l’eix \\(100^{-36}_{-71}\\,\\mu\\text{m}\\). Per tant, es pot afirmar que:`,
+    options: [
+        { text: "El diàmetre mínim del forat és 100 mm.", value: "a" },
+        { text: "El diàmetre màxim del forat és 102,92 mm.", value: "b" },
+        { text: "El diàmetre mínim de l’eix és 99,929 mm.", value: "c" },
+        { text: "El diàmetre màxim de l’eix és 100 mm.", value: "d" }
+    ],
+    correctAnswer: "c",
+    steps: `
+        <strong>Càlcul del diàmetre mínim de l’eix:</strong><br>
+        La tolerància del forat i l’eix s’expressa amb superíndex (+) i subíndex (-) respecte al valor nominal:<br>
+        \\[
+        D_{min\\,eix} = 100\\,\\text{mm} + (-71\\,\\mu\\text{m}) = 100\\,\\text{mm} - 0,071\\,\\text{mm}
+        \\]<br>
+        \\[
+        D_{min\\,eix} = 99,929\\,\\text{mm}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        D_{min\\,eix} = 99,929\\,\\text{mm}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de l'ajust 100 E11/f7">`
 }
 ];
