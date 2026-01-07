@@ -810,7 +810,7 @@ const questions = [
 },
     {
     type: "questions", // Tipus de pregunta
-    category: "energia",
+    category: "electrics",
     text: `Es disposa de dos generadors síncrons. El primer té 10 pols i es connecta a \\(50\\,\\text{Hz}\\). El segon té 12 pols i es connecta a \\(60\\,\\text{Hz}\\). Pel que fa a les velocitats de gir dels seus eixos, es pot afirmar que:`,
     options: [
         { text: "La del primer és més gran que la del segon", value: "a" },
