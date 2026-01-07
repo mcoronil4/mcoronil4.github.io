@@ -764,7 +764,7 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "energia",
+    category: "motors",
     text: `Una bicicleta elèctrica està equipada amb una bateria de liti (de comportament ideal) que subministra una energia \\(E_{bat} = 400\\,\\text{Wh}\\). La bateria alimenta un motor de rendiment \\(\\eta_{motor} = 0,957\\) connectat a un reductor de rendiment \\(\\eta_{red} = 0,93\\). La relació de transmissió entre la velocitat de rotació de les rodes \\(n_r\\) i la velocitat de rotació del motor \\(n_{motor}\\) és \\(\\tau = \\dfrac{n_r}{n_{motor}} = 0,065\\). El diàmetre de les rodes és \\(d = 710\\,\\text{mm}\\).  
     <br><br>
     A l’inici del trajecte la bateria està totalment carregada. En les condicions d’estudi, la bicicleta avança sempre a una velocitat constant \\(v = 25\\,\\text{km/h}\\) per un terreny horitzontal, el ciclista no pedala i el reductor subministra a l’eix de la roda una potència \\(P_{subm} = 250\\,\\text{W}\\). Les pèrdues per rodolament i per aerodinàmica es poden negligir. Determineu:
@@ -818,6 +818,56 @@ const questions = [
         <strong>d) Parell a l’eix del motor:</strong><br>
         \\[
         \\Gamma = \\frac{P_{subm}}{\\omega_{motor}} = \\frac{P_{subm}}{\\omega_r / \\tau} = \\frac{250}{19,56/0,065} \\approx 0,8932\\,\\text{N·m}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
+    type: "exercicis",
+    category: "electrics",
+    text: `Una planxa de cabells professional està formada per dues resistències de valor \\(R_1 = R_2 = 70\\,\\Omega\\) connectades en paral·lel. La planxa es connecta a \\(U = 230\\,\\text{V}\\) i s’estima que està en funcionament un temps \\(t = 6\\,\\text{h}\\) diàries. Determineu:
+    <br><br>
+    <strong>a)</strong> El corrent total \\(I_{tot}\\) que consumeix la planxa. [1 punt]  
+    <br>
+    <strong>b)</strong> La potència elèctrica \\(P_{elèctr}\\) necessària perquè funcioni. [0,5 punts]  
+    <br>
+    <strong>c)</strong> L’energia que consumirà diàriament \\(E_{cons}\\). [0,5 punts]  
+    <br>
+    <strong>d)</strong> El cost diari de l’energia consumida \\(c_{diari}\\) per la planxa de cabells si el cost del kilowatt hora és \\(c = 0,12\\,€/(\\text{kW·h})\\). [0,5 punts]`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Corrent total:</strong><br>
+        <br>
+        - Resistència equivalent en paral·lel:
+        \\[
+        R_{eq} = \\frac{R_1 R_2}{R_1 + R_2} = \\frac{70 \\cdot 70}{70 + 70} = 35\\,\\Omega
+        \\]
+        - Corrent total:
+        \\[
+        I_{tot} = \\frac{U}{R_{eq}} = \\frac{230}{35} \\approx 6,571\\,\\text{A}
+        \\]
+        <br><br>
+        <strong>b) Potència elèctrica:</strong><br>
+        \\[
+        P_{elèctr} = U \\cdot I_{tot} = 230 \\cdot 6,571 \\approx 1411\\,\\text{W}
+        \\]
+        <br><br>
+        <strong>c) Energia diària consumida:</strong><br>
+        \\[
+        E_{cons} = P_{elèctr} \\cdot t = 1411\\,\\text{W} \\cdot 6\\,\\text{h} \\cdot 3600\\,\\text{s/h} 
+        \\]
+        \\[
+        E_{cons} = 32,65\\,\\text{MJ}
+        \\]
+        <br><br>
+        <strong>d) Cost diari:</strong><br>
+        - Energia en kW·h:
+        \\[
+        E_{kWh} = \\frac{E_{cons}}{3,6 \\cdot 10^6} = \\frac{32,65\\cdot10^6}{3,6\\cdot10^6} \\approx 9,07\\,\\text{kW·h}
+        \\]
+        - Cost diari:
+        \\[
+        c_{diari} = E_{kWh} \\cdot 0,12\\,€ = 9,07 \\cdot 0,12 \\approx 1,088\\,€
         \\]
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
