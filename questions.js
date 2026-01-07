@@ -436,6 +436,52 @@ const questions = [
             <br><br>
             <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
         images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
-    }
+    },
+    {
+    type: "questions", // Tipus de pregunta
+    category: "materials",
+    text: `Es disposa d’un cable d’acer de \\(L = 10\\,\\text{m}\\) de longitud i \\(A = 1\\,000\\,\\text{mm}^2\\) de secció. Quina força \\(F\\) cal aplicar perquè s’allargui \\(\\Delta L = 10\\,\\text{mm}\\)? El mòdul elàstic del material és \\(E = 207\\,\\text{GPa}\\).`,
+    options: [
+        { text: "207 kN", value: "a" },
+        { text: "20,7 kN", value: "b" },
+        { text: "2,07 kN", value: "c" },
+        { text: "2,07 MN", value: "d" }
+    ],
+    correctAnswer: "a",
+    steps: `
+        <strong>Càlcul de la força aplicada al cable:</strong><br>
+        Relació entre allargament i força (Llei de Hooke):<br>
+        \\[
+        \\Delta L = \\frac{F \\cdot L}{E \\cdot A}
+        \\]<br>
+        Despejant la força:<br>
+        \\[
+        F = \\frac{\\Delta L \\cdot E \\cdot A}{L}
+        \\]<br>
+        Dades del problema:<br>
+        \\[
+        \\Delta L = 10\\,\\text{mm} = 0,01\\,\\text{m}
+        \\]<br>
+        \\[
+        A = 1000\\,\\text{mm}^2 = 1000 \\times 10^{-6}\\,\\text{m}^2 = 0,001\\,\\text{m}^2
+        \\]<br>
+        \\[
+        E = 207\\,\\text{GPa} = 207 \\times 10^9\\,\\text{Pa}
+        \\]<br>
+        \\[
+        L = 10\\,\\text{m}
+        \\]<br>
+        Substitució a la fórmula:<br>
+        \\[
+        F = \\frac{0,01 \\cdot 207 \\times 10^9 \\cdot 0,001}{10}
+        \\]<br>
+        \\[
+        F = 207000\\,\\text{N} = 207\\,\\text{kN}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`
+},
+
 ];
 
