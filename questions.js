@@ -624,6 +624,39 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
+    type: "exercicis",
+    category: "maquines",
+    text: `Una màquina de producció en sèrie disposa de dos polsadors: l’un s’activa amb la mà i l’altre amb el peu. Per a posar en marxa la màquina, l’operari ha de prémer, com a mínim, un dels dos polsadors. A més, hi ha un interruptor d’emergència, que quan s’acciona atura la màquina.  
+    <br><br>
+    Responeu a les qüestions que hi ha a continuació utilitzant les variables d’estat següents:
+    <br>
+    polsador de mà: \\(m = \\{ 1:\\text{polsador activat},\\ 0:\\text{polsador no activat} \\}\\)  
+    polsador de peu: \\(p = \\{ 1:\\text{polsador activat},\\ 0:\\text{polsador no activat} \\}\\)  
+    interruptor d’emergència: \\(e = \\{ 1:\\text{interruptor accionat},\\ 0:\\text{interruptor no accionat} \\}\\)  
+    estat de la màquina: \\(c = \\{ 1:\\text{en funcionament},\\ 0:\\text{aturada} \\}\\)
+    <br><br>
+    <strong>a)</strong> Elaboreu la taula de veritat del sistema. [1 punt]  
+    <br>
+    <strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]  
+    <br>
+    <strong>c)</strong> Dibuixeu l’esquema de portes lògiques equivalent. [0,5 punts]`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Taula de veritat:</strong><br>
+        <br>
+        <img src="ruta/a/imatgeTaula.jpg" alt="Espai per a la taula de veritat">
+        <br><br>
+        <strong>b) Funció lògica simplificada:</strong><br>
+        <br>
+        \\[
+        c = \\overline{e} \\cdot (m + p)
+        \\]
+        <br><br>
+        <strong>c) Esquema de portes lògiques:</strong><br>
+        <br>
+        <img src="ruta/a/imatgePortes.jpg" alt="Espai per a l’esquema de portes">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
