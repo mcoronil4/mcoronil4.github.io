@@ -258,12 +258,12 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "electrics",
+    category: "maquines",
     text: `Un calefactor elèctric consta de dues resistències idèntiques \\(R_1\\) i \\(R_2\\) que es poden connectar en sèrie o en paral·lel en funció d’un selector que permet triar dos nivells de potència diferents. El fil de cada resistència té una llargària \\(L = 20\\,\\text{m}\\), un diàmetre \\(d = 0,1\\,\\text{mm}\\) i una resistivitat \\(\\rho = 16 \\times 10^{-9}\\,\\Omega\\,\\text{m}\\). El calefactor es connecta a una tensió \\(U = 230\\,\\text{V}\\). Determineu:
     <br><br><strong>a)</strong> La resistència \\(R_1\\). [0,5 punt]
     <br><strong>b)</strong> La resistència màxima \\(R_{màx}\\) i mínima \\(R_{mín}\\) del circuit elèctric. [1 punt]
     <br><strong>c)</strong> La potència màxima que consumeix el calefactor \\(P_{màx}\\). [0,5 punts]
-    <br><strong>d)</strong> Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW h consumit és de \\(p = 0,15\\,€/(\\text{kW·h})\\), determineu el cost mensual \\(c\\). [0,5 punts]
+    <br><strong>d)</strong> Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW·h consumit és \\(p = 0,15\\,\\text{€}\\,\\text{per}\\,\\text{kW·h} = 0,15\\,\\text{€/kW·h}\\), determineu el cost mensual \\(c\\). [0,5 punts]
     <br><br>
     <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del calefactor">`,
     correctAnswer: "",  // Exercici obert
@@ -295,7 +295,7 @@ const questions = [
         \\]<br>
         - Cost mensual:
         \\[
-        c = E \\cdot p = 77,91 \\times 0,15 \\approx 11,69\\,€
+        c = E \\cdot p = 77,91 \\times 0,15 \\approx 11,69\\,\\text{€}
         \\]
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
