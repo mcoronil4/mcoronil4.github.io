@@ -342,6 +342,57 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
+    type: "exercicis",
+    category: "maquines",
+    text: `Un mòbil de joguina penja de la barra en forma de colze \\(OC\\) articulada al punt \\(O\\). El tirant \\(AB\\) manté el sistema en equilibri.
+    <br><br>
+    En les condicions d’anàlisi, la massa \\(m_2\\) té un valor \\(m_2 = 0,2\\,\\text{kg}\\).
+    Considerant la massa de totes les barres i cables negligible, determineu:
+    <br><br>
+    <strong>a)</strong> El valor de les masses \\(m_1\\), \\(m_3\\) i \\(m_4\\) perquè el sistema estigui en equilibri en la posició que mostra la figura i la força \\(T_{CD}\\) del cable \\(CD\\). [1 punt]
+    <br>
+    <strong>b)</strong> El diagrama de sòlid lliure de la barra \\(OBC\\). [0,5 punts]
+    <br>
+    <strong>c)</strong> La força \\(T_{AB}\\) a la qual està sotmès el tirant \\(AB\\). [0,5 punts]
+    <br>
+    <strong>d)</strong> Les forces vertical \\(F_V\\) i horitzontal \\(F_H\\) a l’articulació \\(O\\). [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del sistema mecànic">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Condicions d’equilibri:</strong><br>
+        S’apliquen les equacions d’equilibri estàtic:
+        \\[
+        \\sum F_x = 0, \\quad \\sum F_y = 0, \\quad \\sum M_O = 0
+        \\]
+        <br><br>
+        Resultats:
+        \\[
+        m_1 = \\frac{2}{3}\\,\\text{kg}, \\quad
+        m_3 = 0,1\\,\\text{kg}, \\quad
+        m_4 = 0,2\\,\\text{kg}
+        \\]
+        \\[
+        T_{CD} = 11,44\\,\\text{N}
+        \\]
+        <br><br>
+        <strong>b) Diagrama de sòlid lliure de la barra \\(OBC\\):</strong><br>
+        <img src="ruta/a/imatgeDiagramaSLL.jpg" alt="Diagrama de sòlid lliure de la barra OBC">
+        <br><br>
+        <strong>c) Força al tirant \\(AB\\):</strong>
+        \\[
+        T_{AB} = 18,31\\,\\text{N}
+        \\]
+        <br><br>
+        <strong>d) Forces a l’articulació \\(O\\):</strong>
+        \\[
+        F_H = 18,31\\,\\text{N}, \\quad
+        F_V = 11,44\\,\\text{N}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
