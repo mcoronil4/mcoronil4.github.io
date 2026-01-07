@@ -632,7 +632,7 @@ const questions = [
 },
     {
     type: "questions", // Tipus de pregunta
-    category: "gassos_ideals",
+    category: "pneumatica",
     text: `Una bombona d’aire de busseig conté \\(15\\,\\text{L}\\) a \\(20\\,°\\text{C}\\) i \\(22\\,\\text{MPa}\\). Considerant que té un comportament de gas ideal, determineu el volum d’aquest aire quan es troba a la mateixa temperatura, però a una pressió de \\(1\\,013\\,\\text{hPa}\\).`,
     options: [
         { text: "217,2 L", value: "a" },
