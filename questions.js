@@ -608,7 +608,7 @@ const questions = [
         <br>
         - Volum de gasoil:
         \\[
-        V = \\frac{m}{\\rho_{gasoil}} = \\frac{105\\,600}{0,85} = 124\\,200\\,\\text{L} = 124,2\\,\\text{m^3}
+        V = \\frac{m}{\\rho_{gasoil}} = \\frac{105\\,600}{0,85} = 124\\,200\\,\\text{L} = 124,2\\,\\text{m}^3
         \\]
         <br><br>
         <strong>c) Cost anual del carburant:</strong><br>
@@ -625,7 +625,7 @@ const questions = [
 },
     {
     type: "exercicis",
-    category: "maquines",
+    category: "control",
     text: `Una màquina de producció en sèrie disposa de dos polsadors: l’un s’activa amb la mà i l’altre amb el peu. Per a posar en marxa la màquina, l’operari ha de prémer, com a mínim, un dels dos polsadors. A més, hi ha un interruptor d’emergència, que quan s’acciona atura la màquina.  
     <br><br>
     Responeu a les qüestions que hi ha a continuació utilitzant les variables d’estat següents:
