@@ -571,6 +571,92 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
+    type: "exercicis",
+    category: "energia",
+    text: `Per a mantenir la temperatura d’un hivernacle entre \\(15\\,°\\text{C}\\) i \\(18\\,°\\text{C}\\), s’utilitza una caldera d’aigua de rendiment \\(\\eta_c = 0,91\\) que funciona amb gasoil com a combustible.
+    <br><br>
+    De mitjana, la caldera subministra una potència \\(P_{subm} = 1\\,758\\,\\text{kW}\\) durant \\(4\\) hores al dia, \\(170\\) dies l’any.
+    El poder calorífic del gasoil és \\(p_c = 44,8\\,\\text{MJ/kg}\\), la seva densitat és \\(\\rho_{gasoil} = 0,85\\,\\text{kg/L}\\), i el seu cost és \\(c_{gasoil} = 0,893\\,€ / \\text{L}\\).
+    <br><br>
+    S’estima que el factor d’emissions del gasoil és \\(FE = 2,79\\,\\text{kg de CO}_2/\\text{L}\\).
+    Determineu:
+    <br><br>
+    <strong>a)</strong> L’energia subministrada a l’hivernacle \\(E_{subm}\\) i l’energia consumida \\(E_{cons}\\) per la caldera durant un any. [1 punt]
+    <br>
+    <strong>b)</strong> El volum anual de gasoil consumit \\(V\\). [0,5 punts]
+    <br>
+    <strong>c)</strong> El cost anual del carburant \\(c_{tot}\\). [0,5 punts]
+    <br>
+    <strong>d)</strong> La quantitat de CO\\(_2\\) emesa durant un any \\(m_{CO_2}\\). [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la caldera i l’hivernacle">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Energia subministrada i energia consumida:</strong><br>
+        <br>
+        - Temps total de funcionament anual:
+        \\[
+        t = 4 \\cdot 170 = 680\\,\\text{h}
+        \\]
+        <br>
+        - Energia subministrada:
+        \\[
+        E_{subm} = P_{subm} \\cdot t = 1\\,758\\,\\text{kW} \\cdot 680\\,\\text{h}
+        \\]
+        \\[
+        E_{subm} = 1,195 \\times 10^6\\,\\text{kWh}
+        \\]
+        \\[
+        E_{subm} = 4,304 \\times 10^{12}\\,\\text{J}
+        \\]
+        <br>
+        - Energia consumida per la caldera:
+        \\[
+        E_{cons} = \\frac{E_{subm}}{\\eta_c} = \\frac{4,304 \\times 10^{12}}{0,91}
+        \\]
+        \\[
+        E_{cons} = 4,729 \\times 10^{12}\\,\\text{J}
+        \\]
+        <br><br>
+        <strong>b) Volum anual de gasoil consumit:</strong><br>
+        <br>
+        - Massa de combustible:
+        \\[
+        m = \\frac{E_{cons}}{p_c} = \\frac{4,729 \\times 10^{12}}{44,8 \\times 10^6}
+        \\]
+        \\[
+        m = 105\\,600\\,\\text{kg}
+        \\]
+        <br>
+        - Volum de gasoil:
+        \\[
+        V = \\frac{m}{\\rho_{gasoil}} = \\frac{105\\,600}{0,85}
+        \\]
+        \\[
+        V = 124\\,200\\,\\text{L} = 124,2\\,\\text{m³}
+        \\]
+        <br><br>
+        <strong>c) Cost anual del carburant:</strong><br>
+        <br>
+        \\[
+        c_{tot} = V \\cdot c_{gasoil} = 124\\,200 \\cdot 0,893
+        \\]
+        \\[
+        c_{tot} = 110\\,900\\,€ = 110,9\\,\\text{k€}
+        \\]
+        <br><br>
+        <strong>d) Emissions anuals de CO\\(_2\\):</strong><br>
+        <br>
+        \\[
+        m_{CO_2} = V \\cdot FE = 124\\,200 \\cdot 2,79
+        \\]
+        \\[
+        m_{CO_2} = 346,5 \\times 10^3\\,\\text{kg}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
