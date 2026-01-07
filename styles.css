@@ -1,37 +1,29 @@
 /* ===== GLOBAL STYLES ===== */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(120deg, #0f0f0f, #1a1a1a, #111, #1f1f1f);
-    color: #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    background: #ffffff; /* Fondo blanco */
+    color: #111; /* Color de texto principal negro intenso */
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-size: 400% 400%;
-    animation: gradientShift 20s ease infinite;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    transition: background 0.4s, color 0.4s;
 }
 
 h2 {
     text-align: center;
     margin: 20px 0;
-    color: #ff8c42;
-    text-shadow: 0 2px 8px rgba(255,140,66,0.6);
-    transition: color 0.4s ease;
+    color: #1a237e; /* Azul marino intenso */
+    transition: color 0.4s;
 }
 
 /* ===== QUIZ CONTAINER ===== */
 #quiz-container {
-    max-width: 850px;
-    margin: 25px auto;
-    background: #1c1c1c;
+    max-width: 800px;
+    margin: 30px auto;
+    background: #e3f2fd; /* Azul muy suave de fondo */
     padding: 30px;
     border-radius: 16px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 25px rgba(0,0,50,0.15);
     transition: background 0.4s, color 0.4s, box-shadow 0.4s;
 }
 
@@ -41,32 +33,34 @@ label {
     display: block;
     margin-bottom: 10px;
     margin-top: 20px;
-    color: #ff8c42;
+    color: #0d47a1; /* Azul marino para etiquetas */
     transition: color 0.4s;
 }
 
 select {
     width: 100%;
-    padding: 14px;
+    padding: 12px;
     margin-bottom: 20px;
-    border: 1px solid #444;
-    border-radius: 10px;
-    background-color: #222;
-    color: #fff;
+    border: 1px solid #90caf9;
+    border-radius: 8px;
+    background-color: #bbdefb; /* Azul claro */
+    color: #0d47a1;
     font-size: 16px;
-    transition: all 0.4s ease;
-    box-shadow: inset 0 2px 6px rgba(255,140,66,0.2);
+    transition: background 0.4s, color 0.4s, border 0.4s, box-shadow 0.3s;
+    box-shadow: inset 0 2px 5px rgba(13,71,161,0.2);
 }
 
 /* ===== QUESTIONS & ANSWERS ===== */
-p, strong {
+p {
+    margin: 10px 0;
     font-size: 16px;
-    line-height: 1.6;
+    color: #0d47a1; /* Azul marino para el enunciado */
     transition: color 0.4s;
 }
 
 strong {
-    color: #ff8c42;
+    color: #1565c0; /* Azul intermedio */
+    transition: color 0.4s;
 }
 
 ul {
@@ -80,84 +74,73 @@ li {
     align-items: center;
 }
 
-/* ===== OPTION BUTTONS ===== */
 .option-letter {
     font-weight: bold;
     margin-right: 10px;
 }
 
-/* Botones de opciones */
+/* ===== BUTTONS WITH GLOW ===== */
 li button {
     flex-grow: 1;
-    background: linear-gradient(145deg, #4a6fff, #6a8aff);
+    background: linear-gradient(145deg, #1e88e5, #42a5f5); /* De azul marino a azul claro */
     color: white;
     border: none;
-    padding: 16px 18px;
-    border-radius: 14px;
+    padding: 14px;
+    border-radius: 12px;
     cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     transition: all 0.3s ease;
-    box-shadow: 0 0 15px rgba(74,111,255,0.6), 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 0 12px rgba(66,165,245,0.6), 0 4px 12px rgba(0,0,0,0.15);
 }
 
 li button:hover {
-    background: linear-gradient(145deg, #6a8aff, #4a6fff);
+    background: linear-gradient(145deg, #42a5f5, #1e88e5);
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 0 25px rgba(74,111,255,0.8), 0 6px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 0 20px rgba(66,165,245,0.8), 0 6px 15px rgba(0,0,0,0.2);
 }
 
 /* ===== CORRECT & INCORRECT ===== */
 .correcta {
-    background: linear-gradient(145deg, #00ff85, #00b36f);
+    background-color: #81d4fa; /* Azul muy suave */
     padding: 12px 18px;
     border-radius: 10px;
-    color: #0d1b12;
-    font-weight: 700;
-    box-shadow: 0 4px 15px rgba(0,255,133,0.35), 0 6px 20px rgba(0,0,0,0.1);
+    color: #0d47a1; /* Azul marino para texto */
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(30,136,229,0.4);
     transition: all 0.3s ease;
-}
-
-.correcta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,255,133,0.5), 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .incorrecta {
-    background: linear-gradient(145deg, #ff4c4c, #c50000);
+    background-color: #ef9a9a; /* Rojo suave */
     padding: 12px 18px;
     border-radius: 10px;
-    color: #fff;
-    font-weight: 700;
-    box-shadow: 0 4px 15px rgba(255,76,76,0.35), 0 6px 20px rgba(0,0,0,0.1);
+    color: #b71c1c; /* Rojo intenso */
+    font-weight: bold;
+    box-shadow: 0 4px 12px rgba(244,67,54,0.4);
     transition: all 0.3s ease;
-}
-
-.incorrecta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(255,76,76,0.5), 0 10px 25px rgba(0,0,0,0.15);
 }
 
 /* ===== SOLUTION BUTTON ===== */
 .solution-button {
     width: 100%;
-    background: linear-gradient(145deg, #ff8c42, #e67e22);
+    background: linear-gradient(145deg, #1e88e5, #1565c0); /* Azul gradiente */
     color: white;
     border: none;
     padding: 16px;
-    border-radius: 14px;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: bold;
     transition: all 0.3s ease;
-    margin-top: 25px;
-    box-shadow: 0 0 18px rgba(255,126,34,0.6), 0 6px 15px rgba(0,0,0,0.15);
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(30,136,229,0.6), 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .solution-button:hover {
-    background: linear-gradient(145deg, #e67e22, #ff8c42);
-    transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 0 30px rgba(255,126,34,0.8), 0 8px 20px rgba(0,0,0,0.25);
+    background: linear-gradient(145deg, #1565c0, #1e88e5);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 0 25px rgba(30,136,229,0.8), 0 6px 20px rgba(0,0,0,0.25);
 }
 
 /* ===== VISIBILITY ===== */
@@ -178,30 +161,29 @@ img {
     max-width: 100%;
     margin-top: 15px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
 }
 
 /* ===== EXPLANATION BOX ===== */
 .steps-container {
-    background: #111;
+    background: #bbdefb; /* Azul muy claro para el fondo de pasos */
     padding: 20px;
-    border-radius: 14px;
-    color: #f0f0f0;
+    border-radius: 12px;
+    color: #0d47a1;
     margin-top: 15px;
     font-size: 15px;
     line-height: 1.5;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+    box-shadow: 0 3px 12px rgba(0,0,50,0.15);
 }
 
 .steps-container strong {
-    color: #ff8c42;
+    color: #1e88e5;
 }
 
 /* ===== HEADINGS ===== */
 h1, h2, h3, h4 {
-    color: #ff8c42;
-    text-shadow: 0 2px 6px rgba(255,140,66,0.6);
-}   
+    color: #0d47a1;
+}
 
 /* ===== DARK MODE CINEMÀTIC ===== */
 body.dark-mode {
