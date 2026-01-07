@@ -714,10 +714,10 @@ const questions = [
     category: "metrologia",
     text: `En un ajust \\(100\\,E11/f7\\), la tolerància del forat és \\(100^{+292}_{+72}\\,\\mu\\text{m}\\) i la de l’eix \\(100^{-36}_{-71}\\,\\mu\\text{m}\\). Per tant, es pot afirmar que:`,
     options: [
-        { text: "El diàmetre mínim del forat és 100 mm.", value: "a" },
-        { text: "El diàmetre màxim del forat és 102,92 mm.", value: "b" },
-        { text: "El diàmetre mínim de l’eix és 99,929 mm.", value: "c" },
-        { text: "El diàmetre màxim de l’eix és 100 mm.", value: "d" }
+        { text: "El diàmetre mínim del forat és 100 mm", value: "a" },
+        { text: "El diàmetre màxim del forat és 102,92 mm", value: "b" },
+        { text: "El diàmetre mínim de l’eix és 99,929 mm", value: "c" },
+        { text: "El diàmetre màxim de l’eix és 100 mm", value: "d" }
     ],
     correctAnswer: "c",
     steps: `
@@ -736,5 +736,41 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de l'ajust 100 E11/f7">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "energia",
+    text: `Una persona recorre, cada dia, \\(126\\,\\text{km}\\) en cotxe per anar i tornar de la feina. Fa aquest recorregut 5 vegades a la setmana. Si utilitza un cotxe de gasolina amb un consum mitjà de \\(6,7\\,\\text{L/100 km}\\) i que emet \\(145\\,\\text{g CO2}\\) per quilòmetre, quants kilograms de CO2 (petjada de carboni) emetrà setmanalment?`,
+    options: [
+        { text: "91,35 kg", value: "a" },
+        { text: "612,1 kg", value: "b" },
+        { text: "13,63 kg", value: "c" },
+        { text: "9,14 kg", value: "d" }
+    ],
+    correctAnswer: "a",
+    steps: `
+        <strong>Càlcul de la petjada de carboni setmanal:</strong><br>
+        Distància setmanal recorreguda:<br>
+        \\[
+        d_{setmana} = 126\\,\\text{km/dia} \\times 5\\,\\text{dies} = 630\\,\\text{km}
+        \\]<br>
+        Emissions per km:<br>
+        \\[
+        e = 145\\,\\text{g CO2/km} = 0,145\\,\\text{kg CO2/km}
+        \\]<br>
+        Emissions setmanals:<br>
+        \\[
+        E_{setmana} = d_{setmana} \\cdot e = 630 \\times 0,145
+        \\]<br>
+        \\[
+        E_{setmana} \\approx 91,35\\,\\text{kg CO2}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        E_{setmana} = 91,35\\,\\text{kg CO2}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge del cotxe i recorregut">`
 }
 ];
