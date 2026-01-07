@@ -301,6 +301,47 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
+    type: "exercicis",
+    category: "maquines",
+    text: `Es té un sistema combinatori binari de 3 entrades que controla l’encesa d’un cartell lluminós. El cartell s’il·lumina si el conjunt dels 3 dígits d’entrada és un número capicua.
+    <br><br>
+    Utilitzant les variables d’estat següents:<br>
+    \\[
+    x_1 \\in \\{0,1\\}, \\quad x_2 \\in \\{0,1\\}, \\quad x_3 \\in \\{0,1\\}
+    \\]
+    Estat del cartell:<br>
+    \\[
+    c \\in \\{1: \\text{il·luminat},\\; 0: \\text{apagat}\\}
+    \\]
+    <br>
+    Determineu:
+    <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
+    <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
+    <br><strong>c)</strong> Dibuixeu l’esquema de portes lògiques equivalent. [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del sistema combinatori">`,
+    correctAnswer: "",  // Exercici obert
+    steps: `
+        <strong>a) Taula de veritat del sistema:</strong>
+        <br>
+        <img src="ruta/a/imatgeTaulaVeritat.jpg" alt="Imatge de la taula de veritat">
+        <br><br>
+        <strong>b) Funció lògica del sistema:</strong>
+        <br>
+        - Un nombre capicua de 3 bits compleix que el primer i l’últim bit són iguals.<br>
+        - Per tant, el cartell s’il·lumina quan \\(x_1 = x_3\\).<br><br>
+        Expressió lògica:
+        \\[
+        c = x_1 \\cdot x_3 + \\overline{x_1} \\cdot \\overline{x_3}
+        \\]
+        <br><br>
+        <strong>c) Esquema de portes lògiques equivalent:</strong>
+        <br>
+        <img src="ruta/a/imatgePortesLogiques.jpg" alt="Imatge de l'esquema de portes lògiques">
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
