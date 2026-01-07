@@ -668,5 +668,45 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la bombona d'aire">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "materials",
+    text: `Un acer té un mòdul elàstic de \\(210\\,\\text{GPa}\\), un límit elàstic de \\(350\\,\\text{MPa}\\) i un límit de ruptura de \\(520\\,\\text{MPa}\\). Si una proveta d’aquest material se sotmet a una càrrega de tracció de \\(80\\,\\text{kN}\\), quin diàmetre mínim ha de tenir la proveta perquè no experimenti cap deformació permanent?`,
+    options: [
+        { text: "12,06 mm", value: "a" },
+        { text: "8,531 mm", value: "b" },
+        { text: "17,06 mm", value: "c" },
+        { text: "12,93 mm", value: "d" }
+    ],
+    correctAnswer: "c",
+    steps: `
+        <strong>Càlcul del diàmetre mínim de la proveta:</strong><br>
+        Per a evitar deformació permanent, la tensió de tracció \\(\\sigma\\) ha de ser menor o igual al límit elàstic \\(\\sigma_e\\):<br>
+        \\[
+        \\sigma = \\frac{F}{A} \\leq \\sigma_e
+        \\]<br>
+        On:<br>
+        \\[
+        F = 80\\,\\text{kN} = 80 \\times 10^3\\,\\text{N}, \\quad \\sigma_e = 350\\,\\text{MPa} = 350 \\times 10^6\\,\\text{Pa}
+        \\]<br>
+        L'àrea de la secció transversal d'una proveta circular:<br>
+        \\[
+        A = \\frac{\\pi d^2}{4}
+        \\]<br>
+        Despejant \\(d\\):<br>
+        \\[
+        d = \\sqrt{\\frac{4 F}{\\pi \\sigma_e}} = \\sqrt{\\frac{4 \\cdot 80 \\times 10^3}{\\pi \\cdot 350 \\times 10^6}}
+        \\]<br>
+        \\[
+        d \\approx 0,01706\\,\\text{m} = 17,06\\,\\text{mm}
+        \\]<br><br>
+        Resultat final:<br>
+        \\[
+        d_{min} = 17,06\\,\\text{mm}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la proveta d'acer">`
 }
 ];
