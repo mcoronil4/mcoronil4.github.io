@@ -763,6 +763,66 @@ const questions = [
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
 },
     {
+    type: "exercicis",
+    category: "energia",
+    text: `Una bicicleta elèctrica està equipada amb una bateria de liti (de comportament ideal) que subministra una energia \\(E_{bat} = 400\\,\\text{Wh}\\). La bateria alimenta un motor de rendiment \\(\\eta_{motor} = 0,957\\) connectat a un reductor de rendiment \\(\\eta_{red} = 0,93\\). La relació de transmissió entre la velocitat de rotació de les rodes \\(n_r\\) i la velocitat de rotació del motor \\(n_{motor}\\) és \\(\\tau = \\dfrac{n_r}{n_{motor}} = 0,065\\). El diàmetre de les rodes és \\(d = 710\\,\\text{mm}\\).  
+    <br><br>
+    A l’inici del trajecte la bateria està totalment carregada. En les condicions d’estudi, la bicicleta avança sempre a una velocitat constant \\(v = 25\\,\\text{km/h}\\) per un terreny horitzontal, el ciclista no pedala i el reductor subministra a l’eix de la roda una potència \\(P_{subm} = 250\\,\\text{W}\\). Les pèrdues per rodolament i per aerodinàmica es poden negligir. Determineu:
+    <br><br>
+    <strong>a)</strong> L’energia dissipada \\(E_{diss}\\) en el conjunt motor-reductor quan s’ha esgotat la bateria. [0,5 punts]  
+    <br>
+    <strong>b)</strong> El temps màxim \\(t_{màx}\\) que pot funcionar la bicicleta i la distància màxima recorreguda \\(s_{màx}\\). [1 punt]  
+    <br>
+    <strong>c)</strong> La velocitat angular de les rodes \\(\\omega_r\\). [0,5 punts]  
+    <br>
+    <strong>d)</strong> El parell \\(\\Gamma\\) a l’eix de sortida del motor. [0,5 punts]
+    <br><br>
+    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la bicicleta elèctrica">`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Energia dissipada:</strong><br>
+        <br>
+        - Energia consumida pel motor-reductor:
+        \\[
+        E_{diss} = E_{bat} \\cdot (1 - \\eta_{motor} \\cdot \\eta_{red})
+        \\]
+        - Convertim la bateria a joules:
+        \\[
+        E_{bat} = 400\\,\\text{Wh} = 400 \\cdot 3600\\,\\text{J} = 1,44 \\times 10^6\\,\\text{J}
+        \\]
+        - Energia dissipada:
+        \\[
+        E_{diss} = 1,44\\cdot10^6 \\cdot (1 - 0,957 \\cdot 0,93) \\approx 158,4\\,\\text{kJ}
+        \\]
+        <br><br>
+        <strong>b) Temps i distància màxima:</strong><br>
+        <br>
+        - Potència subministrada:
+        \\[
+        P_{subm} = 250\\,\\text{W}
+        \\]
+        - Temps màxim:
+        \\[
+        t_{màx} = \\frac{E_{bat}}{P_{subm}} = \\frac{1,44\\cdot10^6}{250} \\approx 5760\\,\\text{s} = 1,424\\,\\text{h}
+        \\]
+        - Distància màxima:
+        \\[
+        s_{màx} = v \\cdot t_{màx} = 25\\,\\text{km/h} \\cdot 1,424\\,\\text{h} \\approx 35,6\\,\\text{km}
+        \\]
+        <br><br>
+        <strong>c) Velocitat angular de les rodes:</strong><br>
+        \\[
+        \\omega_r = \\frac{v}{r} = \\frac{25\\,\\text{km/h} \\cdot 1000/3600}{0,710/2\\,\\text{m}} \\approx 19,56\\,\\text{rad/s}
+        \\]
+        <br><br>
+        <strong>d) Parell a l’eix del motor:</strong><br>
+        \\[
+        \\Gamma = \\frac{P_{subm}}{\\omega_{motor}} = \\frac{P_{subm}}{\\omega_r / \\tau} = \\frac{250}{19,56/0,065} \\approx 0,8932\\,\\text{N·m}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+},
+    {
         type: "questions", // Tipus de pregunta
         category: "materials",
         text: `La figura mostra la corba tensió-deformació obtinguda en un assaig de tracció. Quin valor aproximat té el mòdul elàstic del material?`,
