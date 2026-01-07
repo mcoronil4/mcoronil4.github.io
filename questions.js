@@ -807,5 +807,42 @@ const questions = [
         <br><br>
         <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
     images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la motocicleta">`
+},
+    {
+    type: "questions", // Tipus de pregunta
+    category: "energia",
+    text: `Es disposa de dos generadors síncrons. El primer té 10 pols i es connecta a \\(50\\,\\text{Hz}\\). El segon té 12 pols i es connecta a \\(60\\,\\text{Hz}\\). Pel que fa a les velocitats de gir dels seus eixos, es pot afirmar que:`,
+    options: [
+        { text: "La del primer és més gran que la del segon", value: "a" },
+        { text: "La del primer és més petita que la del segon", value: "b" },
+        { text: "Les dues són iguals", value: "c" },
+        { text: "No es poden calcular sense saber si la connexió és en estrella o en triangle", value: "d" }
+    ],
+    correctAnswer: "c",
+    steps: `
+        <strong>Càlcul de la velocitat síncrona:</strong><br>
+        La velocitat síncrona \\(n_s\\) d'un generador es calcula amb:<br>
+        \\[
+        n_s = \\frac{120 f}{p} \\quad [\\text{rev/min}]
+        \\]<br>
+        On:<br>
+        \\(f\\) = freqüència en Hz<br>
+        \\(p\\) = nombre de pols<br><br>
+        Primer generador:<br>
+        \\[
+        n_1 = \\frac{120 \\cdot 50}{10} = 600\\,\\text{rev/min}
+        \\]<br>
+        Segon generador:<br>
+        \\[
+        n_2 = \\frac{120 \\cdot 60}{12} = 600\\,\\text{rev/min}
+        \\]<br><br>
+        Per tant, les dues velocitats són iguals.<br><br>
+        Resultat final:<br>
+        \\[
+        n_1 = n_2 = 600\\,\\text{rev/min}
+        \\]
+        <br><br>
+        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
+    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge dels generadors síncrons">`
 }
 ];
