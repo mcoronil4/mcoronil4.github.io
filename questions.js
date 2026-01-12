@@ -12,8 +12,7 @@ const questions = [
         <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
         <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
         <br><strong>c)</strong> Dibuixeu l’esquema de contactes equivalent. [0,5 punts]
-        <br><br>
-           <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,
+        <br>`,
     correctAnswer: "",  // Exercici obert, no és necessari
     steps: `
         <strong>a) Taula de veritat:</strong>
