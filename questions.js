@@ -25,7 +25,7 @@ const questions = [
         <br><br>
         <strong>c) Esquema de contactes equivalent:</strong>
         <br>
-        <br><br>
+        <br>
         <img src="https://mcoronil4.github.io/images/2020junyserie1p1.jpg" alt="Imatge relacionada amb la resposta">
     `,
 },
