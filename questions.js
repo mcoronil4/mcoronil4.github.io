@@ -166,8 +166,8 @@ const questions = [
     correctAnswer: "",  // Exercici obert
     steps: `
         <strong>a) Diagrama de cos lliure:</strong>
-        <br>
-        <img src="ruta/a/imatgeDiagrama.jpg" alt="Imatge per al diagrama de cos lliure">
+        <br><br>
+        <img src="https://mcoronil4.github.io/images/2020junyserie1p5.jpg" alt="Imatge relacionada amb la resposta">
         <br><br><strong>b) Força al tirant \\(T_{AB}\\):</strong>
         <br>
         - Calculant l’equilibri de moments respecte al punt \\(O\\):<br>
@@ -192,8 +192,8 @@ const questions = [
         \\sigma'_{AB} = 324,4\\,\\text{MPa}
         \\]<br>
         - Com que \\(\\sigma'_{AB}\\) és superior al límit elàstic del material (250 MPa), el tirant es deformaria permanentment i de manera irreversible. No podria mantenir la posició d’equilibri estudiada.
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+        <br>
+        `
 },
     {
     type: "exercicis",
