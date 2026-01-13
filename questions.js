@@ -268,8 +268,6 @@ const questions = [
         \\]
         <br><br>
         <strong>c) Esquema de portes lògiques equivalent:</strong>
-        <br>
-        <img src="ruta/a/imatgePortesLogiques.jpg" alt="Imatge de l'esquema de portes lògiques">
         <br><br>
         <img src="https://mcoronil4.github.io/images/2020junyserie3pp2.jpg" alt="Imatge relacionada amb la resposta">`
 },
@@ -308,8 +306,8 @@ const questions = [
         T_{CD} = 11,44\\,\\text{N}
         \\]
         <br><br>
-        <strong>b) Diagrama de sòlid lliure de la barra \\(OBC\\):</strong><br>
-        <img src="ruta/a/imatgeDiagramaSLL.jpg" alt="Diagrama de sòlid lliure de la barra OBC">
+        <strong>b) Diagrama de sòlid lliure de la barra \\(OBC\\):</strong><br><br>
+        <img src="https://mcoronil4.github.io/images/2020junyserie3p3.jpg" alt="Imatge relacionada amb la resposta">
         <br><br>
         <strong>c) Força al tirant \\(AB\\):</strong>
         \\[
@@ -321,8 +319,7 @@ const questions = [
         F_H = 18,31\\,\\text{N}, \\quad
         F_V = 11,44\\,\\text{N}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
