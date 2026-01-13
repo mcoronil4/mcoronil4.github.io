@@ -42,8 +42,7 @@ const questions = [
             <br><strong>b)</strong> La potència a l’eix de les rodes \\(P_{subm}\\). [0,5 punts]
             <br><strong>c)</strong> El parell \\(\\Gamma\\) a l’eix del motor. [0,5 punts]
             <br><strong>d)</strong> El temps màxim de funcionament \\(t\\) del conjunt i la distància màxima recorreguda \\(s_{rec}\\). [1 punt]
-            <br><br>
-               <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
+            <br>`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
             <strong>a) Velocitat angular de les rodes i del motor:</strong>
@@ -86,8 +85,7 @@ const questions = [
             \\[
             s_{rec} = v \\times t = 1,028\\,\\text{m/s} \\times 11520\\,\\text{s} = 11830\\,\\text{m} = 11,83\\,\\text{km}
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+            <br>`,  // Imatge opcional al final de la resposta
     },
     {
         type: "exercicis",
@@ -104,8 +102,7 @@ const questions = [
             Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
             <br>
             <br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
-            <br><br>
-               <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`,  // Imatge opcional al final de la pregunta
+            <br>`,  // Imatge opcional al final de la pregunta
         correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
         steps: `
             <strong>a) Velocitat angular de les rodes i del motor:</strong>
@@ -148,8 +145,7 @@ const questions = [
             \\[
             s_{rec} = v \\times t = 1,028\\,\\text{m/s} \\times 11520\\,\\text{s} = 11830\\,\\text{m} = 11,83\\,\\text{km}
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+            <br>`,  // Imatge opcional al final de la resposta
     },
     {
     type: "exercicis",
@@ -162,7 +158,7 @@ const questions = [
     <br><strong>d)</strong> Les forces horitzontal \\(F_H\\) i vertical \\(F_V\\) a l’articulació \\(O\\). [0,5 punts]
     <br><strong>e)</strong> Què passaria si el diàmetre del cable d’acer fos \\(d' = 1\\,\\text{mm}\\)? Justifiqueu breument la resposta. [0,5 punts]
     <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del diagrama de la barra amb fanal">`,
+    <img src="https://mcoronil4.github.io/images/2020junyserie1pp5.jpg" alt="Imatge relacionada amb la resposta">`,
     correctAnswer: "",  // Exercici obert
     steps: `
         <strong>a) Diagrama de cos lliure:</strong>
@@ -203,8 +199,7 @@ const questions = [
     <br><strong>b)</strong> La resistència màxima \\(R_{màx}\\) i mínima \\(R_{mín}\\) del circuit elèctric. [1 punt]
     <br><strong>c)</strong> La potència màxima que consumeix el calefactor \\(P_{màx}\\). [0,5 punts]
     <br><strong>d)</strong> Si el calefactor funciona a potència màxima durant 1 hora al dia, 30 dies al mes, i el preu del kW·h consumit és \\(p = 0,15\\,\\text{€}\\,\\text{per}\\,\\text{kW·h} = 0,15\\,\\text{€/kW·h}\\), determineu el cost mensual \\(c\\). [0,5 punts]
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del calefactor">`,
+    <br>`,
     correctAnswer: "",  // Exercici obert
     steps: `
         <strong>a) Resistència de cada fil \\(R_1\\):</strong>
@@ -236,8 +231,7 @@ const questions = [
         \\[
         c = E \\cdot p = 77,91 \\times 0,15 \\approx 11,69\\,\\text{€}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+        <br>`
 },
     {
     type: "exercicis",
