@@ -193,7 +193,7 @@ const questions = [
         \\]<br>
         - Com que \\(\\sigma'_{AB}\\) és superior al límit elàstic del material (250 MPa), el tirant es deformaria permanentment i de manera irreversible. No podria mantenir la posició d’equilibri estudiada.
         <br>
-        `
+        `,
 },
     {
     type: "exercicis",
