@@ -251,13 +251,12 @@ const questions = [
     <br><br><strong>a)</strong> Escriviu la taula de veritat del sistema. [1 punt]
     <br><strong>b)</strong> Determineu la funció lògica entre aquestes variables i, si escau, simplifiqueu-la. [1 punt]
     <br><strong>c)</strong> Dibuixeu l’esquema de portes lògiques equivalent. [0,5 punts]
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del sistema combinatori">`,
+    <br>`,
     correctAnswer: "",  // Exercici obert
     steps: `
         <strong>a) Taula de veritat del sistema:</strong>
-        <br>
-        <img src="ruta/a/imatgeTaulaVeritat.jpg" alt="Imatge de la taula de veritat">
+        <br><br>
+        <img src="https://mcoronil4.github.io/images/2020junyserie3p2.jpg" alt="Imatge relacionada amb la resposta">
         <br><br>
         <strong>b) Funció lògica del sistema:</strong>
         <br>
