@@ -17,7 +17,10 @@ const questions = [
     steps: `
         <strong>a) Taula de veritat:</strong>
         <br>
-        <br><br>
+        <br>
+        <img src="https://mcoronil4.github.io/images/2020junyserie1pp1.jpg" alt="Imatge relacionada amb la resposta">
+        <br>
+        <br>
         <strong>b) Funció lògica simplificada:</strong>
         <br>\\[
         a = v \\cdot (\\overline{c} + \\overline{l})
