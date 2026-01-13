@@ -287,7 +287,7 @@ const questions = [
     <br>
     <strong>d)</strong> Les forces vertical \\(F_V\\) i horitzontal \\(F_H\\) a l’articulació \\(O\\). [0,5 punts]
     <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge del sistema mecànic">`,
+    <img src="https://mcoronil4.github.io/images/2020junyserie3pp3.jpg" alt="Imatge relacionada amb la resposta">`,
     correctAnswer: "",
     steps: `
         <strong>a) Condicions d’equilibri:</strong><br>
@@ -335,8 +335,7 @@ const questions = [
     <strong>b)</strong> L’energia consumida \\(E_{\\text{cons}}\\). [0,5 punts]
     <br>
     <strong>c)</strong> El volum de combustible utilitzat \\(V\\). [1 punt]
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb el moviment del vehicle">`,
+    <br>`,
     correctAnswer: "",
     steps: `
         <strong>a) Potència mitjana desenvolupada pel motor:</strong><br>
@@ -392,8 +391,7 @@ const questions = [
         \\[
         V = 38,44\\,\\text{cm}^3
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
@@ -411,8 +409,7 @@ const questions = [
     <strong>c)</strong> El temps màxim de funcionament \\(t_{\\text{màx}}\\) de la cadira i la distància màxima \\(s_{\\text{màx}}\\) recorreguda en les condicions descrites. [1 punt]
     <br>
     <strong>d)</strong> La reducció de la distància màxima recorreguda \\(\\Delta s\\) si, a la mateixa velocitat, la inclinació fos \\(\\alpha_2 = 10°\\). [0,5 punts]
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la cadira de rodes">`,
+    <br>`,
     correctAnswer: "",
     steps: `
         <strong>a) Potència consumida pel motor:</strong><br>
@@ -496,8 +493,7 @@ const questions = [
         \\[
         \\Delta s = 13,29 - 8,00 = 5,292\\,\\text{km}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
@@ -549,8 +545,7 @@ const questions = [
         \\[
         m_{CO_2} = V \\cdot FE = 124\\,200 \\cdot 2,79 = 346,5 \\times 10^3\\,\\text{kg}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
