@@ -271,7 +271,7 @@ const questions = [
         <br>
         <img src="ruta/a/imatgePortesLogiques.jpg" alt="Imatge de l'esquema de portes lògiques">
         <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`
+        <img src="https://mcoronil4.github.io/images/2020junyserie3pp2.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
     type: "exercicis",
