@@ -269,7 +269,7 @@ const questions = [
         <br><br>
         <strong>c) Esquema de portes lògiques equivalent:</strong>
         <br><br>
-        <img src="https://mcoronil4.github.io/images/2020junyserie3pp2.jpg" alt="Imatge relacionada amb la resposta">`
+        <img src="https://mcoronil4.github.io/images/2020junyserie3pp2.jpg" alt="Imatge relacionada amb la resposta">`,
 },
     {
     type: "exercicis",
