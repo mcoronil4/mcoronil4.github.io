@@ -595,7 +595,7 @@ const questions = [
     steps: `
         <strong>a) Diagrama de sòlid lliure:</strong><br>
         <br>
-        <img src="ruta/a/imatgeDiagrama.jpg" alt="Espai per al diagrama de sòlid lliure">
+        <img src="https://mcoronil4.github.io/2020setembreserie4p3.jpg" alt="Imatge relacionada amb la resposta">
         <br><br>
         <strong>b) Força al tirant AC:</strong><br>
         <br>
@@ -615,8 +615,7 @@ const questions = [
         \\[
         \\sigma = \\frac{F_{AC}}{A} = \\frac{F_{AC}}{\\pi d^2 / 4} = 555\\,\\text{MPa}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
