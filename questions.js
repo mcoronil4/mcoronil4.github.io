@@ -824,8 +824,7 @@ const questions = [
             \\[
             E \\approx 110\\ \\text{GPa}
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
+            <br>`,  // Imatge opcional al final de la resposta
         images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q1.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
     },
     {
@@ -867,9 +866,7 @@ const questions = [
             \\[
             V_{total} \\approx 1,598 \\, \\text{cm}^3
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+            <br>`  // Imatge opcional al final de la pregunta
     },
     {
         type: "questions", // Tipus de pregunta
@@ -910,9 +907,7 @@ const questions = [
             Relació de transmissió:<br>
             \\[
             \\tau = \\frac{\\omega_{red}}{\\omega_{mot}} = \\frac{4\\,\\text{rad/s}}{157,08\\,\\text{rad/s}} = 0,02546 = 25,46 \\times 10^{-3}
-            \\]<br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+            \\]<br>`  // Imatge opcional al final de la pregunta
     },
     {
         type: "questions", // Tipus de pregunta
@@ -958,9 +953,8 @@ const questions = [
             \\[
             F_1 = 392,28\\,\\text{N}
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+            <br>`,  // Imatge opcional al final de la resposta
+        images: `<img src="https://mcoronil4.github.io/images/2020junyserie1q4.jpg" alt="Imatge relacionada amb la resposta">`  // Imatge opcional al final de la pregunta
     },
     {
         type: "questions", // Tipus de pregunta
@@ -1002,9 +996,7 @@ const questions = [
             \\[
             m_{\\mathrm{Nb}} \\approx 18{,}54\\,\\text{kg}
             \\]
-            <br><br>
-            <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,  // Imatge opcional al final de la resposta
-        images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`  // Imatge opcional al final de la pregunta
+            <br>`  // Imatge opcional al final de la pregunta
     },
     {
     type: "questions", // Tipus de pregunta
