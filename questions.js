@@ -617,7 +617,7 @@ const questions = [
         \\[
         \\sigma = \\frac{F_{AC}}{A} = \\frac{F_{AC}}{\\pi d^2 / 4} = 555\\,\\text{MPa}
         \\]
-        <br>`
+        <br>`,
 },
     {
     type: "exercicis",
@@ -632,8 +632,7 @@ const questions = [
     <strong>c)</strong> L’energia diària útil \\(E_{útil}\\) generada. [0,5 punts]  
     <br>
     <strong>d)</strong> Quants habitatges es podrien abastir amb aquesta central si el consum mitjà elèctric d’un habitatge a Catalunya és \\(E_{cons} = 3\\,487\\,\\text{kW·h/any}\\). [1 punt]  
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la central hidroelèctrica">`,
+    <br>`,
     correctAnswer: "",
     steps: `
         <strong>a) Potència de l’aigua:</strong><br>
@@ -683,8 +682,7 @@ const questions = [
         \\[
         N \\approx 14\\,053\\,\\text{habitatges}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
@@ -700,8 +698,7 @@ const questions = [
     <strong>c)</strong> La velocitat angular de les rodes \\(\\omega_r\\). [0,5 punts]  
     <br>
     <strong>d)</strong> El parell \\(\\Gamma\\) a l’eix de sortida del motor. [0,5 punts]
-    <br><br>
-    <img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la bicicleta elèctrica">`,
+    <br>`,
     correctAnswer: "",
     steps: `
         <strong>a) Energia dissipada:</strong><br>
@@ -743,8 +740,7 @@ const questions = [
         \\[
         \\Gamma = \\frac{P_{subm}}{\\omega_{motor}} = \\frac{P_{subm}}{\\omega_r / \\tau} = \\frac{250}{19,56/0,065} \\approx 0,8932\\,\\text{N·m}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
     type: "exercicis",
@@ -783,8 +779,7 @@ const questions = [
         <strong>d) Cost diari:</strong><br>
         - Energia en kWh: 32,65 MJ ÷ 3,6 ≈ 9,07 kWh<br>
         - Cost diari: 9,07 kWh × 0,12 € = 1,088 €  
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resolució">`
+        <br>`
 },
     {
         type: "questions", // Tipus de pregunta
