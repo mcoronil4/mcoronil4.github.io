@@ -1039,9 +1039,7 @@ const questions = [
         \\[
         F = 207000\\,\\text{N} = 207\\,\\text{kN}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb la pregunta">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1093,9 +1091,8 @@ const questions = [
         \\[
         L = 14^{+0,105}_{-0,02}\\,\\text{mm}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la figura amb toleràncies">`
+        <br>`,
+    images: `<img src="https://mcoronil4.github.io/images/2020junyserie3q2.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1137,9 +1134,7 @@ const questions = [
         \\[
         d \\approx 119,2\\,\\text{km}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb el vehicle elèctric">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1187,9 +1182,7 @@ const questions = [
         \\[
         d = 377,2\\,\\text{km}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge relacionada amb les estufes de butà">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1226,9 +1219,7 @@ const questions = [
         \\[
         V_2 = 3,258 m³
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la bombona d'aire">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
