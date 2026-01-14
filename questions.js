@@ -566,9 +566,8 @@ const questions = [
     <strong>c)</strong> Dibuixeu l’esquema de portes lògiques equivalent. [0,5 punts]`,
     correctAnswer: "",
     steps: `
-        <strong>a) Taula de veritat:</strong><br>
-        <br>
-        <img src="ruta/a/imatgeTaula.jpg" alt="Espai per a la taula de veritat">
+        <strong>a) Taula de veritat:</strong><br><br>
+        <img src="https://mcoronil4.github.io/2020setembreserie4p2.jpg" alt="Imatge relacionada amb la resposta">
         <br><br>
         <strong>b) Funció lògica simplificada:</strong><br>
         <br>
