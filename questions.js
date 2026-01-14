@@ -590,7 +590,9 @@ const questions = [
     <br>
     <strong>c)</strong> Determineu les forces horitzontal \\(F_H\\) i vertical \\(F_V\\) a l’articulació O. [1 punt]  
     <br>
-    <strong>d)</strong> Determineu la tensió normal \\(\\sigma\\) del tirant. [0,5 punts]`,
+    <strong>d)</strong> Determineu la tensió normal \\(\\sigma\\) del tirant. [0,5 punts]
+    <br><br>
+    <img src="https://mcoronil4.github.io/images/2020setembreserie4pp3.jpg" alt="Imatge relacionada amb la resposta">`,
     correctAnswer: "",
     steps: `
         <strong>a) Diagrama de sòlid lliure:</strong><br>
