@@ -138,8 +138,7 @@ const questions = [
         La relació funcional és:<br>
         \\[
         t(c) = \\frac{m_b}{c}
-        \\]<br>
-        (Espai reservat per inserir el gràfic amb les escales corresponents)<br><br>
+        \\]<br><br>
         <img src="https://mcoronil4.github.io/images/2020junyserie1p4.jpg" alt="Imatge relacionada amb la resposta"><br><br>
 
         <strong>d) Massa de CO₂ emesa en un dia de funcionament:</strong><br>
