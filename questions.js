@@ -1257,9 +1257,7 @@ const questions = [
         \\[
         d_{min} = 17,06\\,\\text{mm}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la proveta d'acer">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1285,9 +1283,7 @@ const questions = [
         \\[
         D_{min\\,eix} = 99,929\\,\\text{mm}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de l'ajust 100 E11/f7">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1321,9 +1317,7 @@ const questions = [
         \\[
         E_{setmana} = 91,35\\,\\text{kg CO2}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge del cotxe i recorregut">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1356,9 +1350,7 @@ const questions = [
         \\[
         V = 125\\,\\text{cm³}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge de la motocicleta">`
+        <br>`
 },
     {
     type: "questions", // Tipus de pregunta
@@ -1393,8 +1385,6 @@ const questions = [
         \\[
         n_1 = n_2 = 600\\,\\text{rev/min}
         \\]
-        <br><br>
-        <img src="ruta/a/imatgeResposta.jpg" alt="Imatge relacionada amb la resposta">`,
-    images: `<img src="ruta/a/imatgePregunta.jpg" alt="Imatge dels generadors síncrons">`
+        <br>`
 }
 ];
