@@ -567,7 +567,7 @@ const questions = [
     correctAnswer: "",
     steps: `
         <strong>a) Taula de veritat:</strong><br><br>
-        <img src="https://mcoronil4.github.io/2020setembreserie4p2.jpg" alt="Imatge relacionada amb la resposta">
+        <img src="https://mcoronil4.github.io/images/2020setembreserie4p2.jpg" alt="Imatge relacionada amb la resposta">
         <br><br>
         <strong>b) Funció lògica simplificada:</strong><br>
         <br>
