@@ -88,65 +88,75 @@ const questions = [
             <br>`,  // Imatge opcional al final de la resposta
     },
     {
-        type: "exercicis",
-        category: "energia",
-        text: `Una estufa d’exterior alimentada amb gas butà té un consum regulable d’entre 
-            \\(c_{m\\text{ín}} = 450\\,\\text{g/h}\\) i \\(c_{m\\text{àx}} = 800\\,\\text{g/h}\\) de butà. El poder calorífic del butà és \\(p_b = 49,61\\,\\text{MJ/kg}\\) i es distribueix en bombones que contenen una massa de butà de \\(m_b = 12,5\\,\\text{kg}\\). Determineu:
-            <br><br>
-            <strong>a)</strong> La potència mínima \\(P_{\\text{mín}}\\) i màxima \\(P_{\\text{màx}}\\) de l’estufa. [0,5 punts]
-            <br>
-            <strong>b)</strong> La durada de funcionament màxima d’una bombona \\(t_{\\text{màx}}\\). [0,5 punts]
-            <br>
-            <strong>c)</strong> El gràfic de la durada \\(t\\) d’una bombona en hores, en funció del consum \\(c\\) de butà, i indiqueu-ne les escales. [1 punt]
-            <br><br>
-            Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
-            <br>
-            <br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
-            <br>`,  // Imatge opcional al final de la pregunta
-        correctAnswer: "",  // No és necessari aquí perquè es tracta d'un exercici obert
-        steps: `
-            <strong>a) Velocitat angular de les rodes i del motor:</strong>
-            <br>
-            - Velocitat angular de les rodes auxiliars:
-            \\[
-            \\omega_r = \\frac{v}{r} = \\frac{1,028\\,\\text{m/s}}{0,1\\,\\text{m}} = 10,28\\,\\text{rad/s}
-            \\]
-            - Velocitat angular del motor:
-            \\[
-            \\omega_{mot} = \\frac{\\omega_r}{\\tau} = \\frac{10,28\\,\\text{rad/s}}{0,08} = 128,5\\,\\text{rad/s}
-            \\]
-            <br><strong>b) Potència a l’eix de les rodes:</strong>
-            <br>
-            - Aplicant rendiment del motor i del reductor:
-            \\[
-            P_{subm} = P_{cons} \\times \\eta_{mot} \\times \\eta_{red} = 75\\,\\text{W} \\times 0,87 \\times 0,95 = 62,06\\,\\text{W}
-            \\]
-            <br><strong>c) Parell a l’eix del motor:</strong>
-            <br>
-            - Potència útil a l’eix del motor:
-            \\[
-            P_{mot} = P_{cons} \\times \\eta_{mot} = 75\\,\\text{W} \\times 0,87 = 65,25\\,\\text{W}
-            \\]
-            - Parell:
-            \\[
-            \\Gamma_{mot} = \\frac{P_{mot}}{\\omega_{mot}} = \\frac{65,25\\,\\text{W}}{128,5\\,\\text{rad/s}} = 0,5077\\,\\text{N·m}
-            \\]
-            <br><strong>d) Temps màxim de funcionament i distància recorreguda:</strong>
-            <br>
-            - Energia de la bateria:
-            \\[
-            E_{bat} = 240\\,\\text{Wh} = 240 \\times 3600\\,\\text{W·s} = 864000\\,\\text{J}
-            \\]
-            - Temps de funcionament:
-            \\[
-            t = \\frac{E_{bat}}{P_{cons}} = \\frac{864000\\,\\text{J}}{75\\,\\text{W}} = 11520\\,\\text{s} = 3,2\\,\\text{h}
-            \\]
-            - Distància màxima recorreguda:
-            \\[
-            s_{rec} = v \\times t = 1,028\\,\\text{m/s} \\times 11520\\,\\text{s} = 11830\\,\\text{m} = 11,83\\,\\text{km}
-            \\]
-            <br>`,  // Imatge opcional al final de la resposta
-    },
+    type: "exercicis",
+    category: "energia",
+    text: `Una estufa d’exterior alimentada amb gas butà té un consum regulable d’entre 
+        \\(c_{m\\text{ín}} = 450\\,\\text{g/h}\\) i \\(c_{m\\text{àx}} = 800\\,\\text{g/h}\\) de butà. El poder calorífic del butà és \\(p_b = 49,61\\,\\text{MJ/kg}\\) i es distribueix en bombones que contenen una massa de butà de \\(m_b = 12,5\\,\\text{kg}\\). Determineu:
+        <br><br>
+        <strong>a)</strong> La potència mínima \\(P_{\\text{mín}}\\) i màxima \\(P_{\\text{màx}}\\) de l’estufa. [0,5 punts]
+        <br>
+        <strong>b)</strong> La durada de funcionament màxima d’una bombona \\(t_{\\text{màx}}\\). [0,5 punts]
+        <br>
+        <strong>c)</strong> El gràfic de la durada \\(t\\) d’una bombona en hores, en funció del consum \\(c\\) de butà, i indiqueu-ne les escales. [1 punt]
+        <br><br>
+        Una terrassa de bar té instal·lades \\(n = 3\\) d’aquestes estufes que funcionen durant \\(t_{\\text{bar}} = 10\\,\\text{h/dia}\\) a potència màxima. L’Oficina Catalana del Canvi Climàtic estima un factor d’emissió \\(FE = 2,96\\,\\text{kg CO2/kg butà}\\). Determineu:
+        <br>
+        <br><strong>d)</strong> La massa de CO2 emesa en un dia de funcionament \\(m_{CO2}\\).
+        <br>`,
+    correctAnswer: "",
+    steps: `
+        <strong>a) Potència mínima i màxima de l’estufa:</strong><br>
+        La potència tèrmica s’obté a partir del consum de combustible:<br>
+        \\[
+        P = c \\cdot p_b
+        \\]<br>
+        Consum mínim:<br>
+        \\[
+        c_{mín} = 450\\,\\text{g/h} = 0,45\\,\\text{kg/h}
+        \\]<br>
+        \\[
+        P_{mín} = 0,45 \\cdot 49,61 = 22,32\\,\\text{MJ/h} = 6,201\\,\\text{kW}
+        \\]<br>
+        Consum màxim:<br>
+        \\[
+        c_{màx} = 800\\,\\text{g/h} = 0,8\\,\\text{kg/h}
+        \\]<br>
+        \\[
+        P_{màx} = 0,8 \\cdot 49,61 = 39,69\\,\\text{MJ/h} = 11,02\\,\\text{kW}
+        \\]<br><br>
+
+        <strong>b) Durada màxima de funcionament d’una bombona:</strong><br>
+        La durada màxima s’obté amb el consum mínim:<br>
+        \\[
+        t_{màx} = \\frac{m_b}{c_{mín}} = \\frac{12,5}{0,45}
+        \\]<br>
+        \\[
+        t_{màx} = 27,78\\,\\text{h}
+        \\]<br><br>
+
+        <strong>c) Gràfic de la durada en funció del consum:</strong><br>
+        La relació funcional és:<br>
+        \\[
+        t(c) = \\frac{m_b}{c}
+        \\]<br>
+        (Espai reservat per inserir el gràfic amb les escales corresponents)<br><br>
+        <img src="https://mcoronil4.github.io/images/2020junyserie1p4.jpg" alt="Imatge relacionada amb la resposta"><br><br>
+
+        <strong>d) Massa de CO₂ emesa en un dia de funcionament:</strong><br>
+        Consum diari d’una estufa a potència màxima:<br>
+        \\[
+        m_{butà,1} = 0,8\\,\\text{kg/h} \\cdot 10\\,\\text{h} = 8\\,\\text{kg}
+        \\]<br>
+        Consum total de les 3 estufes:<br>
+        \\[
+        m_{butà} = 3 \\cdot 8 = 24\\,\\text{kg}
+        \\]<br>
+        Emissions de CO₂:<br>
+        \\[
+        m_{CO2} = 24 \\cdot 2,96 = 71,04\\,\\text{kg}
+        \\]
+    `,
+},
     {
     type: "exercicis",
     category: "maquines",
