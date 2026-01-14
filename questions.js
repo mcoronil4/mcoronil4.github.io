@@ -577,7 +577,7 @@ const questions = [
         <br><br>
         <strong>c) Esquema de portes lògiques:</strong><br>
         <br>
-        <img src="ruta/a/imatgePortes.jpg" alt="Espai per a l’esquema de portes">`
+        <img src="https://mcoronil4.github.io/images/2020setembreserie4pp2.jpg" alt="Imatge relacionada amb la resposta">`
 },
     {
     type: "exercicis",
